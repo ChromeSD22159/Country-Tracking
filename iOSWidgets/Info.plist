@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>$(PRODUCT_NAME) Automatic storage of the locations in which country they were</string>
+	<key>NSLocationUsageDescription</key>
+	<string>$(PRODUCT_NAME) Automatic storage of the locations in which country they were</string>
+	<key>NSWidgetWantsLocation</key>
+	<true/>
+	<key>NSExtension</key>
+	<dict>
+		<key>NSExtensionPointIdentifier</key>
+		<string>com.apple.widgetkit-extension</string>
+		<key>NSWidgetWantsLocation</key>
+		<string>$(PRODUCT_NAME) Automatic storage of the locations in which country they were</string>
+	</dict>
+</dict>
+</plist>
