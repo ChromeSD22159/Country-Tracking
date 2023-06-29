@@ -7,7 +7,7 @@
      Xcode will simulate a route visiting each waypoint.
      -->
     <wpt lat="48.00668" lon="7.83949">
-        <name>Freiburg</name>
+        <name>Freiburg i. BR.</name>
         
         <!--
          Optionally provide a time element for each waypoint. Xcode will interpolate movement
