@@ -36,6 +36,7 @@
 		B63CDF902A569E770064F65F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6676BC12A470A6400260C8F /* Persistence.swift */; };
 		B64733112A56E7DD00152143 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B647330F2A56E7D300152143 /* CloudKit.framework */; };
 		B64733152A56F38500152143 /* CloudkitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64733142A56F38500152143 /* CloudkitManager.swift */; };
+		B648784D2A59C80100ED3028 /* VersionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B648784C2A59C80100ED3028 /* VersionItem.swift */; };
 		B65289862A507557003AFF13 /* ShopSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65289852A507557003AFF13 /* ShopSheet.swift */; };
 		B65289902A507D09003AFF13 /* Country-Tracking-InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B652898E2A507D09003AFF13 /* Country-Tracking-InfoPlist.strings */; };
 		B65289932A507D09003AFF13 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B65289912A507D09003AFF13 /* Localizable.strings */; };
@@ -119,6 +120,7 @@
 		B63CDF6E2A55B4040064F65F /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
 		B647330F2A56E7D300152143 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		B64733142A56F38500152143 /* CloudkitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudkitManager.swift; sourceTree = "<group>"; };
+		B648784C2A59C80100ED3028 /* VersionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionItem.swift; sourceTree = "<group>"; };
 		B65289852A507557003AFF13 /* ShopSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopSheet.swift; sourceTree = "<group>"; };
 		B652898F2A507D09003AFF13 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = "de.lproj/Country-Tracking-InfoPlist.strings"; sourceTree = "<group>"; };
 		B65289922A507D09003AFF13 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				B61AA46C2A47321F00E33FD5 /* Country.swift */,
+				B648784C2A59C80100ED3028 /* VersionItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -539,6 +542,7 @@
 				B61AA46D2A47321F00E33FD5 /* Country.swift in Sources */,
 				B6676BC22A470A6400260C8F /* Persistence.swift in Sources */,
 				B652899E2A547C40003AFF13 /* ChangeLog.swift in Sources */,
+				B648784D2A59C80100ED3028 /* VersionItem.swift in Sources */,
 				B61AA4A82A48B0C700E33FD5 /* LocationWidgetProvider.swift in Sources */,
 				B61AA4982A48256C00E33FD5 /* AppStorageManager.swift in Sources */,
 				B61AA4B72A4989CA00E33FD5 /* Calendar.swift in Sources */,

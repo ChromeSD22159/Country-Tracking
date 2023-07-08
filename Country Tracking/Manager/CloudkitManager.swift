@@ -71,7 +71,7 @@ struct CloudkitView: View {
     @StateObject var cloudManager = CloudkitManager()
     var body: some View {
         VStack {
-            Text("Signed in: \(cloudManager.isSignInToiCloud.description.uppercased())")
+            Text(LocalizedStringKey("Signed in: \(cloudManager.isSignInToiCloud.description.uppercased())"))
         }
     }
 }

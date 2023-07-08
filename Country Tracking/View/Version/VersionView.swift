@@ -36,9 +36,12 @@ struct VersionView: View {
                                         .foregroundColor(currentTheme.text)
                                 }
                                 
-                                ForEach(item.tasks, id: \.self) { task in
+                                ForEach(item.tasks, id: \.id) { task in
+                                    
+                                    let t = task
+                                    
                                     HStack {
-                                        Text(LocalizedStringKey("- \( task )")  )
+                                        Text(t.name)
                                             .foregroundColor(currentTheme.text)
                                         Spacer()
                                     }
@@ -79,12 +82,4 @@ struct VersionView_Previews: PreviewProvider {
             VersionView(theme: .orange)
         }
     }
-}
-
-struct VersionItem {
-    var id = UUID()
-    var versionNr: String
-    var date: String
-    var time: String
-    var tasks: [String]
 }

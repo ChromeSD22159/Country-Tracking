@@ -11,7 +11,7 @@ import CloudKit
 import SwiftUI
 
 struct PersistenceController {
-    @AppStorage("iCLoadSync") var iCLoadSync = false
+    @AppStorage("iCloudSync") var iCloudSync = false
     
     static let shared = PersistenceController()
     
@@ -87,7 +87,7 @@ struct PersistenceController {
         localStoreDescription.setOption(true as NSNumber, forKey: NSPersistentHistoryTrackingKey)
         localStoreDescription.configuration = "Local"
 
-        if iCLoadSync {
+        if iCloudSync {
             localStoreDescription.cloudKitContainerOptions = NSPersistentCloudKitContainerOptions(containerIdentifier: iCloudIdentfier)
         } else {
             localStoreDescription.cloudKitContainerOptions = nil

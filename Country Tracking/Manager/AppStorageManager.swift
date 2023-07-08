@@ -25,7 +25,7 @@ class AppStorageManager: ObservableObject {
     
     @AppStorage("AppIconChange") var AppIconChange = true
     
-    @AppStorage("iCLoadSync") var iCLoadSync = false
+    @AppStorage("iCloudSync") var iCloudSync = false
     
     @AppStorage("CountdownFreeCounter") var CountdownFreeCounter = 0
     @AppStorage("CountdownFreeMaxCounter") var CountdownFreeMaxCounter = 1

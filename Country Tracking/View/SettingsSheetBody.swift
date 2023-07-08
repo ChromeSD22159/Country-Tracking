@@ -144,7 +144,7 @@ struct SettingsSheetBody: View {
                 
                 HStack {
                     
-                    Label("\(cloudManager.isSignInToiCloud ? cloudManager.userName ?? "Signed In" : "Not Signed")", systemImage: cloudManager.isSignInToiCloud ? "person.icloud" : "lock.icloud")
+                    Label(cloudManager.isSignInToiCloud ? LocalizedStringKey("Signed In") : LocalizedStringKey("Not Signed") , systemImage: cloudManager.isSignInToiCloud ? "person.icloud" : "lock.icloud")
                         .foregroundColor(currentTheme.text)
                         .font(.footnote.bold())
                     
@@ -254,16 +254,16 @@ struct SettingsSheetBody: View {
             Section(content: {
                 VStack {
                     HStack {
-                        Text("iCLoad Auto Sync")
+                        Text("iCloud Auto Sync")
                             .foregroundColor(currentTheme.text)
                         
                         Spacer()
                         
-                        Toggle("", isOn: $appStorage.iCLoadSync)
+                        Toggle("", isOn: $appStorage.iCloudSync)
                             //.disabled(!appStorage.hasPro)
                     }
                     HStack {
-                        Text("Pro Feature: Enables automatic syncing and saving with iCload")
+                        Text("Pro Feature: Enables automatic syncing and saving with iCloud")
                             .font(.caption2)
                             .foregroundColor(.gray)
                         

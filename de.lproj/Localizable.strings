@@ -68,16 +68,25 @@
 "blue" = "Blau";
 
 /* No comment provided by engineer. */
+"Bugfix" = "Bug-Fix";
+
+/* No comment provided by engineer. */
 "Buy once for %@ and use all Pro features for life." = "Kaufen Sie einmal für %@ und nutzen Sie alle Pro-Funktionen ein Leben lang.";
 
 /* No comment provided by engineer. */
 "Cancel" = "Abbrechen";
 
 /* No comment provided by engineer. */
+"ChanceLog implemented" = "ChanceLog implementiert";
+
+/* No comment provided by engineer. */
 "ChangeLog" = "Was gibt es neues?";
 
 /* No comment provided by engineer. */
 "Color:" = "Farbe:";
+
+/* No comment provided by engineer. */
+"Countdown feature implemented" = "Countdown-Funktion implementiert";
 
 /* No comment provided by engineer. */
 "County Visited Today" = "Heute besuchter Länder";
@@ -114,6 +123,9 @@
 
 /* No comment provided by engineer. */
 "How to install a Widget?" = "Wie installiert man ein Widget?";
+
+/* No comment provided by engineer. */
+"iCloud Auto Sync" = "Automatische iCloud-Synchronisierung";
 
 /* No comment provided by engineer. */
 "Icon:" = "Icon:";
@@ -155,6 +167,9 @@
 "Only %@ per year, billed per year." = "Nur %@ pro Jahr, abgerechnet pro Jahr.";
 
 /* No comment provided by engineer. */
+"Optimize Responsitivity for iPad, iPhone" = "Optimieren Sie die Reaktionsfähigkeit für iPad und iPhone";
+
+/* No comment provided by engineer. */
 "orange" = "Orange";
 
 /* No comment provided by engineer. */
@@ -165,6 +180,12 @@
 
 /* No comment provided by engineer. */
 "Privacy Policy" = "Datenschutzrichtlinie";
+
+/* No comment provided by engineer. */
+"Pro Feature" = "Pro-Funktion";
+
+/* No comment provided by engineer. */
+"Pro Feature: Enables automatic syncing and saving with iCloud" = "Pro-Funktion: Ermöglicht die automatische Synchronisierung und Speicherung mit iCloud";
 
 /* No comment provided by engineer. */
 "Rate the App" = "Die App bewerten";
@@ -212,6 +233,12 @@
 "Show Visited Countries for any numbers of days" = "Besuchte Länder für eine beliebige Anzahl von Tagen anzeigen";
 
 /* No comment provided by engineer. */
+"Signed in: %@" = "Angemeldet: %@";
+
+/* No comment provided by engineer. */
+"Small countdown widget" = "Kleines Countdown-Widget";
+
+/* No comment provided by engineer. */
 "Start Date:" = "Start Datum:";
 
 /* No comment provided by engineer. */
@@ -224,7 +251,10 @@
 "The start date is used for calculating the progress in the widgets. By default, the creation date and time is used." = "Das Startdatum wird für die Berechnung des Fortschritts in den Widgets verwendet. Standardmäßig wird das Erstellungsdatum und die Uhrzeit verwendet.";
 
 /* No comment provided by engineer. */
-"Theme Color" = "Theme Farbe";
+"Theme" = "Schema";
+
+/* No comment provided by engineer. */
+"Theme Color" = "Themschema";
 
 /* No comment provided by engineer. */
 "There are no fees during your trial period. After that there is a charge of %@ per year until cancellation." = "Während der Probezeit fallen keine Gebühren an. Danach fällt bis zur Kündigung eine Gebühr von %@ pro Jahr an.";
@@ -280,3 +310,8 @@
 /* No comment provided by engineer. */
 "Your`ve visited **%lld/%lld** Countries" = "Du hast **%lld/%lld** Länder besucht";
 
+/* No comment provided by engineer. */
+"Signed In" = "Angemeldet";
+
+/* No comment provided by engineer. */
+"Not Signed" = "Nicht Angemeldet";
