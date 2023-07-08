@@ -1,0 +1,12 @@
+/* Copyright (human-readable) */
+"NSHumanReadableCopyright" = "Frederik KOhler";
+
+/* Privacy - Location Always and When In Use Usage Description */
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "Country Tracking verwendet Standort für Widget";
+
+/* Privacy - Location Usage Description */
+"NSLocationUsageDescription" = "Country Tracking verwendet die Informationen zu Ihrem Startort, um automatisch das Land anzugeben, in dem Sie sich befinden.";
+
+/* Privacy - Location When In Use Usage Description */
+"NSLocationWhenInUseUsageDescription" = "Country Tracking verwendet die Informationen zu Ihrem Startort, um automatisch das Land anzugeben, in dem Sie sich befinden.";
+

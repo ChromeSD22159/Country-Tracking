@@ -6,8 +6,6 @@
 //
 
 import SwiftUI
-import FlagKit
-import CountryKit
 
 struct CalendarView: View {
     
@@ -114,9 +112,8 @@ struct CalendarView: View {
                calendar.currentDates = calendar.extractMonth()
            }
            .onChange(of: calendar.currentMonth, perform: { value in
+               calendar.currentDate = calendar.getCurrentMonth()
                calendar.currentDates = calendar.extractMonth()
-               calendar.getCurrentMonth()
-               calendar.currentDate = (calendar.currentDates.first?.date)!
            })
        }
         
@@ -142,6 +139,18 @@ struct DayButton:View {
     var request: FetchRequest<VisitedCountry>
     var visitedCountries: FetchedResults<VisitedCountry>{ request.wrappedValue }
 
+    // MARK: - FIXME: - RENAME TO `var countries`
+    @FetchRequest(
+        sortDescriptors: [NSSortDescriptor(keyPath: \VisitedCountry.region, ascending: true)],
+        animation: .default)
+    var allCountries: FetchedResults<Countries>
+    
+    @FetchRequest(
+        sortDescriptors: [NSSortDescriptor(keyPath: \VisitedCountry.date, ascending: true)],
+        animation: .default)
+    var allVisitedCountries: FetchedResults<VisitedCountry>
+    
+    // MARK: - FIXME: - CHANGE to fetchResult with predicate
     var countries: [(id: UUID, name: String, iso: String)] = {
 
         var arrayOfCountries: [(id: UUID, name: String, iso: String)] = []
@@ -239,24 +248,35 @@ struct DayButton:View {
                             currentTheme.backgroundColor.ignoresSafeArea()
                             Color.gray.opacity(0.1).ignoresSafeArea()
                             
-                            ScrollView {
+                            ScrollView(showsIndicators: false) {
                                 VStack {
-                                    HStack {
-                                        Spacer()
-                                        
-                                        
+                                    // Sheet Header
+                                    HStack(spacing: 20) {                                        
                                         AddCalendarDaySheet(
                                             button: {
-                                                Label("Add Country", systemImage: "plus")
+                                                let d = country.date?.dateFormatte(date: "dd.MM.yy", time: "").date ?? Date().dateFormatte(date: "dd.MM.yy", time: "").date
+                                                Label("Add for \(d)", systemImage: "calendar.badge.plus")
+                                                    .font(.caption)
+                                                    .frame(maxWidth: UIScreen.main.bounds.size.width / 2)
                                             }, sheetContent: {
                                                 AddCountry(date: country.date ?? Date(), theme: theme, List: countriesList.map{ $0.region ?? "" })
                                             }, presentation: .infinity
                                         )
                                         
+                                        AddCalendarDaySheet(
+                                            button: {
+                                                Label("Add Range", systemImage: "calendar.badge.plus")
+                                                    .font(.caption)
+                                                    .frame(maxWidth: UIScreen.main.bounds.size.width / 2)
+                                            }, sheetContent: {
+                                                AddRangeCountry(date: country.date ?? Date(), theme: theme, List: countriesList.map{ $0.region ?? "" })
+                                            }, presentation: .infinity
+                                        )
                                         
                                     }
                                     .padding()
                                     
+                                    // headline
                                     HStack {
                                         Text("Visited Countries at \(date.date.dateFormatte(date: "dd.MM.YYYY", time: "").date)")
                                             .font(.title3.bold())
@@ -266,7 +286,7 @@ struct DayButton:View {
                                         Spacer()
                                     }
                                     
-                                    
+                                    // Loop all Entries
                                     ForEach(visitedCountries) { country in
                                         HStack(spacing:20) {
                                             HStack {
@@ -289,12 +309,7 @@ struct DayButton:View {
                                                     .font(.callout)
                                             }
                                             .onTapGesture {
-                                                viewContext.delete(country)
-                                                do {
-                                                    try? viewContext.save()
-                                                } catch let error {
-                                                    print("delete Country: \(error)")
-                                                }
+                                                deleteCountry(country)
                                             }   
                                         }
                                     }
@@ -312,19 +327,13 @@ struct DayButton:View {
                     
                     
                 } else {
-                    // none Country
-                    /*
-                    CalendarDaySheet(
-                        button: {
-                            
-                        }, sheetContent: {
-                            AddCountry(date: date.date, theme: theme, List: [])
-                        }, presentation: .infinity
-                    )
-                    */
                     Button(action: {
-                        setDate = date.date
-                        isPresentingConfirm.toggle()
+                        if date.date > Date() {
+                            setDate = Date()
+                        } else {
+                            setDate = date.date
+                            isPresentingConfirm.toggle()
+                        }
                     }, label: {
                         VStack(spacing: 5){
                             Circle()
@@ -361,6 +370,7 @@ struct DayButton:View {
                         }
                         .padding(5)
                     })
+                    .disabled(date.date > Date())
                     
                 }
                     
@@ -398,6 +408,39 @@ struct DayButton:View {
         .onTapGesture(perform: {
             calendar.currentDate = date.date
         })
+    }
+    
+    func deleteCountry(_ country: FetchedResults<VisitedCountry>.Element) {
+        let iso = country.region
+        
+        // delete Country from visitedCountries
+        viewContext.delete(country)
+
+        do {
+            try? viewContext.save()
+        } 
+        
+        // check if country still there from other entry
+        let searchedCountryCount = CheckVisitedCountriesList(region: iso!)
+        
+        print("Searched `\(iso ?? "")` count: \(searchedCountryCount)")
+        
+        if searchedCountryCount == 0 {
+            // delete from countries
+            guard let toDeleteCountriesItem = allCountries.first(where: { return $0.region == iso }) else { return }
+            
+            viewContext.delete(toDeleteCountriesItem)
+
+            do {
+                try? viewContext.save()
+            }
+        }
+    }
+    
+    private func CheckVisitedCountriesList(region: String) -> Int {
+        return allVisitedCountries.filter {
+            return $0.region == region
+        }.count
     }
     
     func countryFlag(_ countryCode: String) -> String {

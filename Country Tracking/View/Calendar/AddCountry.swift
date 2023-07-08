@@ -23,11 +23,7 @@ struct AddCountry: View {
         return self.theme.theme
     }
     
-    #if targetEnvironment(simulator)
-    @State var selectedCountries: [String] = ["DE"]
-    #else
     @State var selectedCountries: [String] = []
-    #endif
     
     @State var filteredCountries: [String] = []
     
@@ -42,7 +38,7 @@ struct AddCountry: View {
         ZStack(content: {
             currentTheme.backgroundColor.ignoresSafeArea()
             
-            Image(currentTheme.BackgroundImage)
+            Image("BG_TRANSPARENT")
                 .resizable()
                 .ignoresSafeArea()
             
@@ -80,7 +76,7 @@ struct AddCountry: View {
                 }
                 .padding()
                 
-                ScrollView {
+                ScrollView(showsIndicators: false) {
                     // SelectedList
                     if selectedCountries.count != 0 {
                         HStack {
@@ -178,7 +174,7 @@ struct AddCountry: View {
                 if List.count == 0 {
                     filteredCountries = NSLocale.isoCountryCodes
                 } else {
-                    List.map { countryCode in
+                    let _ = List.map { countryCode in
                         
                         print(countryCode)
                         filteredCountries = filteredCountries.filter({ $0 != countryCode })
@@ -202,7 +198,7 @@ struct AddCountry: View {
         if input.count == 0 {
             return list
         } else {
-            return list.filter{ Locale.current.localizedString(forRegionCode: $0)!.uppercased().contains(input) }
+            return list.filter{ Locale.current.localizedString(forRegionCode: $0)!.uppercased().contains(input) || $0 == input  }
         }
     }
     

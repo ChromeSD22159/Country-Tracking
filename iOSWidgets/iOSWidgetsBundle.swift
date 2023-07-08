@@ -11,6 +11,7 @@ import SwiftUI
 @main
 struct iOSWidgetsBundle: WidgetBundle {
     var body: some Widget {
-        iOSWidgets()
+        CountryTrackerToday()
+        FreeCountDownWidget()
     }
 }

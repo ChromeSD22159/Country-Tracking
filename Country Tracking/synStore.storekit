@@ -1,0 +1,108 @@
+{
+  "identifier" : "D7D154C4",
+  "nonRenewingSubscriptions" : [
+    {
+      "displayPrice" : "49.99",
+      "familyShareable" : false,
+      "internalID" : "6450843656",
+      "localizations" : [
+        {
+          "description" : "All Access for Lifetime",
+          "displayName" : "Lifetime",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "Alle Pro Features auf Lebenszeit",
+          "displayName" : "Lifetime",
+          "locale" : "de"
+        }
+      ],
+      "productID" : "20",
+      "referenceName" : "Lifetime",
+      "type" : "NonRenewingSubscription"
+    }
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+    "_applicationInternalID" : "6450798671",
+    "_developerTeamID" : "ZD275Y62U7",
+    "_lastSynchronizedDate" : 710183514.97134697
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "21357356",
+      "localizations" : [
+
+      ],
+      "name" : "Pro Widgets",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "2.99",
+          "familyShareable" : true,
+          "groupNumber" : 3,
+          "internalID" : "6450843938",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Monats Abo",
+              "displayName" : "Monatlich",
+              "locale" : "de"
+            },
+            {
+              "description" : "Monthly subscription",
+              "displayName" : "Monthly",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "12",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Monthly",
+          "subscriptionGroupID" : "21357356",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "24.99",
+          "familyShareable" : true,
+          "groupNumber" : 2,
+          "internalID" : "6450843764",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Jahres Abo",
+              "displayName" : "Jährlich",
+              "locale" : "de"
+            },
+            {
+              "description" : "Annual subscription",
+              "displayName" : "Annually",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "11",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Yearly",
+          "subscriptionGroupID" : "21357356",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 2,
+    "minor" : 0
+  }
+}

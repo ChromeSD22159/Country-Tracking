@@ -2,12 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>$(PRODUCT_NAME) Automatic storage of the locations in which country they were</string>
-	<key>NSLocationUsageDescription</key>
-	<string>$(PRODUCT_NAME) Automatic storage of the locations in which country they were</string>
-	<key>NSWidgetWantsLocation</key>
-	<true/>
 	<key>NSExtension</key>
 	<dict>
 		<key>NSExtensionPointIdentifier</key>
@@ -15,5 +9,7 @@
 		<key>NSWidgetWantsLocation</key>
 		<string>$(PRODUCT_NAME) Automatic storage of the locations in which country they were</string>
 	</dict>
+	<key>NSWidgetWantsLocation</key>
+	<true/>
 </dict>
 </plist>

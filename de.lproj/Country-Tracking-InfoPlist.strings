@@ -1,0 +1,12 @@
+/* Privacy - Location Always and When In Use Usage Description */
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "Bei der Länderverfolgung werden die Informationen zu Ihrem Startort verwendet, um automatisch das Land einzutragen, in dem Sie sich befinden.";
+
+/* Privacy - Location Always Usage Description */
+"NSLocationAlwaysUsageDescription" = "Bei der Länderverfolgung werden die Informationen zu Ihrem Startort verwendet, um automatisch das Land einzutragen, in dem Sie sich befinden.";
+
+/* Privacy - Location Usage Description */
+"NSLocationUsageDescription" = "Bei der Länderverfolgung werden die Informationen zu Ihrem Startort verwendet, um automatisch das Land einzutragen, in dem Sie sich befinden.";
+
+/* Privacy - Location When In Use Usage Description */
+"NSLocationWhenInUseUsageDescription" = "Bei der Länderverfolgung werden die Informationen zu Ihrem Startort verwendet, um automatisch das Land einzutragen, in dem Sie sich befinden.";
+

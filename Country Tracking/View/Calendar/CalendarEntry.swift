@@ -27,11 +27,16 @@ struct CalendarEntry: View {
     
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \VisitedCountry.date, ascending: true)],
-        predicate: NSPredicate(format: "date > %@", Calendar.current.startOfDay(for: Calendar.current.date(byAdding: .day, value: -7, to: Date())! ) as CVarArg),
         animation: .default)
     private var visitedCountries: FetchedResults<VisitedCountry>
     
+    @Binding var tab: Tab
+    
     @State var isSettingsSheet = false
+    
+    @State var orientation = UIDeviceOrientation.unknown
+    
+    @State var deviceWidth: CGFloat?
     
     var theme: Themes
     
@@ -40,125 +45,59 @@ struct CalendarEntry: View {
     }
     
     var body: some View {
-        NavigationStack {
-            
-            ZStack {
-                currentTheme.backgroundColor.ignoresSafeArea()
-                
-                Image(currentTheme.BackgroundImage)
-                    .resizable()
-                    .ignoresSafeArea()
-                
-                
-                VStack {
-                    ZStack {
-                        VStack {
-                            ScrollView {
-                                VStack(spacing: 10) {
-                                    
-                                    CalendarView(control: false, theme: theme)
-                                    
-                                    // MARK: - SORTED ENTRIES
-                                    //sortedEntries()
+        ZStack {
 
-                                    // MARK: - ALL ENTRIES
-                                    //allEntries()
+            VStack {
+                ZStack {
+                    VStack {
+                        ScrollView(showsIndicators: false) {
+                           
+                            ViewThatFits(content: {
+                                // LANDSCAPE
+                                HStack {
+                                    
+                                    Spacer()
+                                      
+                                    VStack{
+                                        CalendarView(control: true, theme: theme)
+                                            .frame(maxWidth: 430)
+                                            .padding(.top, 70)
+                                    }
+                                    
+                                    Spacer()
+                                }
+                                
+                                
+                                // PORTRAIT
+                                VStack(spacing: 10) {
+                                    CalendarView(control: true, theme: theme)
+                                        .frame(maxWidth: 430)
                                 }
                                 .font(.body)
-                                .padding(.top, 70)
-                            }
-                        } // Content
-                        
-                        
-                        Header()
-                    }
+                                
+                            })
+                        }
+                    } // Content
+                    
+                    
+                    Header()
                 }
-                
             }
+            
+        }
+        .onAppear {
+            orientation = UIDevice.current.orientation
+            deviceWidth = UIScreen.main.bounds.size.width
+            
+        }
+        .onRotate { newOrientation, newdeviceWidth  in
+            orientation = newOrientation
+            deviceWidth = newdeviceWidth
         }
         .foregroundColor(currentTheme.text)
-        .fullScreenCover(isPresented: $isSettingsSheet, content: {
+        .sheet(isPresented: $isSettingsSheet, content: {
             
-            ZStack(content: {
-                currentTheme.backgroundColor.ignoresSafeArea()
-                
-                VStack(spacing: 20) {
-                      
-                    HStack {
-                        Spacer()
-                        
-                        
-                        Button(action: {isSettingsSheet.toggle()}){
-                            Image(systemName: "xmark")
-                                .foregroundColor(currentTheme.text)
-                        }
-                    }
-                    .padding()
-                    
-                    Text("Settings")
-                        .font(.title3.bold())
-                        .foregroundColor(currentTheme.text)
-                    
-                    
-                    Section(content: {
-                        HStack {
-                            Text("Theme")
-                                .foregroundColor(currentTheme.text)
-                            
-                            Spacer()
-                            
-                            Picker("Appearance", selection: $appStorage.currentTheme) {
-                                ForEach(["default", "blue", "green"], id: \.self) { theme in
-                                    Text(theme).tag(theme)
-                                }
-                            }
-                            .foregroundColor(currentTheme.text)
-                            .pickerStyle(.menu)
-                        }
-                    })
-                    .padding()
-                    .background(.ultraThinMaterial)
-                    .cornerRadius(10)
-                    
-                    Section(content: {
-                        HStack {
-                            Text("Theme")
-                                .foregroundColor(currentTheme.text)
-                            
-                            Spacer()
-                            
-                            Picker("Theme", selection: $appStorage.currentTheme) {
-                                ForEach(["default", "blue", "green"], id: \.self) { theme in
-                                    Text(theme).tag(theme)
-                                        .foregroundColor(currentTheme.text)
-                                }
-                            }
-                            .foregroundColor(currentTheme.text)
-                            .pickerStyle(.segmented)
-                        }
-                    })
-                    .padding()
-                    .background(.ultraThinMaterial)
-                    .cornerRadius(10)
-                    
-                    Section(content: {
-                        HStack {
-                            Text("Debug")
-                                .foregroundColor(currentTheme.text)
-                            
-                            Spacer()
-                            
-                            Toggle("", isOn: appStorage.$Debug)
-                        }
-                    })
-                    .padding()
-                    .background(.ultraThinMaterial)
-                    .cornerRadius(10)
-                    
-                    Spacer()
-                }
-                .padding(.horizontal)
-            })
+            SettingsSheetBody(theme: theme, isSettingsSheet: $isSettingsSheet)
             
         })
        
@@ -168,33 +107,40 @@ struct CalendarEntry: View {
     func Header() -> some View {
         VStack {
             HStack {
-                HStack(spacing: 10) {
-                    if appStorage.Debug {
-                        Button(action: { isSettingsSheet.toggle() }) {
-                            Image(systemName: "gear")
+                HStack(spacing: 20) {
+                    
+                    if appStorage.hasPro == false {
+                        Button(action: { appStorage.shopSheet.toggle() }) {
+                            Image(systemName: "trophy.fill")
+                                .font(.title3)
                         }
                     }
+                    
+                    Button(action: {
+                        withAnimation(.easeInOut(duration: 0.2)){
+                            tab = .countdown
+                        }
+                    }) {
+                        Image(systemName: "square.stack")
+                            .font(.title3)
+                    }
+                    
                 }
                 .font(.callout)
                 .foregroundColor(currentTheme.headerText)
                 
                 Spacer()
                 
-                CalendarControls(color: currentTheme.text)
+                Text("Visited Countries")
+                //CalendarControls(color: currentTheme.text)
                 
                 Spacer()
                 
-                HStack(spacing: 10) {
+                HStack(spacing: 20) {
                     
-                    if appStorage.Debug {
-                        
-                        Button(action: { deleteAllVisitedCountry() } ) {
-                            Image(systemName: "trash")
-                        }
-                    } else {
-                        Button(action: { isSettingsSheet.toggle() }) {
-                            Image(systemName: "gear")
-                        }
+                    Button(action: { isSettingsSheet.toggle() }) {
+                        Image(systemName: "gear")
+                            .font(.title3)
                     }
                    
                 }
@@ -316,10 +262,15 @@ private let dateFormatter: DateFormatter = {
 
 struct ContentEntry_Previews: PreviewProvider {
     static var previews: some View {
-        CalendarEntry(theme: .blue)
+        ContentView(theme: .default)
             .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
             .environmentObject(AppStorageManager())
             .environmentObject(ThemeManager())
             .environmentObject(CalendarViewModel())
+            .environmentObject(IconNames())
+            .environmentObject(EntitlementManager())
+            .environmentObject(PurchaseManager(entitlementManager: EntitlementManager()))
+            //.previewDevice(PreviewDevice(rawValue: "iPad Pro (11-inch)"))
+            .previewDevice(PreviewDevice(rawValue: "iPhone 14 Pro Max"))
     }
 }

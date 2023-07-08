@@ -82,9 +82,7 @@ class LocationWidgetProvider: NSObject, ObservableObject, CLLocationManagerDeleg
             try? viewContext.save()
             print("saved: \(newCounty)")
             WidgetCenter.shared.reloadAllTimelines()
-        } catch let error {
-            print(error)
-        }
+        } 
     }
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
@@ -139,12 +137,12 @@ class LocationWidgetProvider: NSObject, ObservableObject, CLLocationManagerDeleg
         print(error.localizedDescription)
     }
     
-    func decodeLocation (_ l: CLLocation, completion: @escaping (_ city: String, _ country: String, _ region: String) -> Void) {
+    func decodeLocation (_ l: CLLocation, completion: @escaping (_ city: String, _ country: String, _ region: String, _ latitude: Double, _ longitude: Double) -> Void) {
          geocoder.reverseGeocodeLocation(l, completionHandler: { location, error in
             
             guard let location = location else { return }
              
-             completion( location.first!.country!, location.first!.locality!, location.first!.isoCountryCode! )
+             completion( location.first!.country!, location.first!.locality!, location.first!.isoCountryCode! , Double(l.coordinate.latitude) ,Double(l.coordinate.longitude))
             
         })
     }

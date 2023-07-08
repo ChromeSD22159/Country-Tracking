@@ -12,23 +12,48 @@ import WidgetKit
 @main
 struct Country_TrackingApp: App {
     let persistenceController = PersistenceController.shared
+    
     @Environment(\.scenePhase) var scenePhase
+    
     @StateObject var appStoregeManager = AppStorageManager()
+    
+    @StateObject var iconNames = IconNames()
+    
     @StateObject var themeManager = ThemeManager()
-    @State var theme: Themes = .default
+    
     @StateObject var calendar:CalendarViewModel = CalendarViewModel()
+
+    @StateObject private var entitlementManager: EntitlementManager
+
+    @StateObject private var purchaseManager: PurchaseManager
+    
+    init() {
+        let entitlementManager = EntitlementManager()
+        let purchaseManager = PurchaseManager(entitlementManager: entitlementManager)
+
+        self._entitlementManager = StateObject(wrappedValue: entitlementManager)
+        self._purchaseManager = StateObject(wrappedValue: purchaseManager)
+    }
+    
+    @State var theme: Themes = .default
+    
     var body: some Scene {
         
         WindowGroup {
             ContentView(theme: theme)
-            //ContentEntry(theme: theme)
+                .defaultAppStorage(UserDefaults(suiteName: "group.fk.countryTracking")!)
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
                 .environmentObject(appStoregeManager)
                 .environmentObject(themeManager)
                 .environmentObject(calendar)
+                .environmentObject(iconNames)
+                .environmentObject(entitlementManager)
+                .environmentObject(purchaseManager)
                 .onAppear {
                     getPermissons()
                     theme = themeManager.currentTheme()
+                    
+                    try? persistenceController.container.viewContext.setQueryGenerationFrom(.current)
                 }
                 .onChange(of: appStoregeManager.currentTheme, perform: { newTheme in
                     theme = themeManager.currentTheme()
@@ -44,6 +69,15 @@ struct Country_TrackingApp: App {
                         print("ScenePhase Background")
                     }
                 }
+                .task {
+                   await purchaseManager.updatePurchasedProducts()
+                    
+                    do {
+                        try await purchaseManager.loadProducts()
+                    } catch {
+                        print(error.localizedDescription)
+                    }
+                }
         }
     }
 }
@@ -57,7 +91,7 @@ extension Country_TrackingApp {
         let center = UNUserNotificationCenter.current()
         center.requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
             
-            if let error = error {
+            if error != nil {
                 // Handle the error here.
             }
             

@@ -7,8 +7,12 @@
 
 import SwiftUI
 import CoreData
+import WidgetKit
 
 struct ContentView: View {
+    @EnvironmentObject var iconSettings:IconNames
+    @EnvironmentObject var appStorageManager: AppStorageManager
+    
     var theme: Themes
     
     var currentTheme: Theme {
@@ -34,25 +38,23 @@ struct ContentView: View {
     var countries: FetchedResults<Countries>
     
     @State var Tab: Tab = .calendar
+    @State var isSettingsSheet = false
     
     var body: some View {
         ZStack {
             
             currentTheme.backgroundColor.ignoresSafeArea()
             
-            Image("BG_DARK")
+            Image("BG_TRANSPARENT")
                 .resizable()
                 .ignoresSafeArea()
             
-            VStack {
-                
-                switch Tab {
-                case .calendar: CalendarEntry(theme: theme)
-                case .visitedMap: InteractiveMapView(theme: theme)
-                case .settings: ZStack{}
-                }
-                
-                Spacer()
+            switch Tab {
+            case .calendar: CalendarEntry(tab: $Tab, theme: theme)
+            case .visitedMap: VisitedCountries(tab: $Tab, theme: theme)
+            case .map: VisitedCitys(tab: $Tab, theme: theme)
+            case .countdown: CountdownEntry(theme: theme)
+            case .settings: ZStack{}
             }
             
             VStack {
@@ -99,7 +101,25 @@ struct ContentView: View {
                     
                     Button(action: {
                         withAnimation(.easeInOut(duration: 0.2)){
-                            Tab = .settings
+                            Tab = .map
+                        }
+                    }, label: {
+                        VStack(spacing: 5) {
+                            Image(systemName: "map")
+                                .font(.title2)
+                            
+                            Text("Map\nVisited Places")
+                                .font(.caption2)
+                                .multilineTextAlignment(.center)
+                        }
+                    }) .foregroundColor(Tab == .map ? .white : .white.opacity(0.7))
+                    
+                    Spacer()
+                    
+                    Button(action: {
+                        withAnimation(.easeInOut(duration: 0.2)){
+                            //Tab = .settings
+                            isSettingsSheet = true
                         }
                     }, label: {
                         VStack(spacing: 5) {
@@ -120,6 +140,35 @@ struct ContentView: View {
                 .padding(.horizontal)
             }
         }
+        .fullScreenCover(isPresented: $isSettingsSheet, content: {
+            
+            SettingsSheetBody(theme: theme, isSettingsSheet: $isSettingsSheet)
+            
+        })
+        .fullScreenCover(isPresented: $appStorageManager.showWidgetSheet, content: {
+            
+            WidgetSheetBody(theme: theme, isWidgetSheet: $appStorageManager.showWidgetSheet)
+            
+        })
+        .fullScreenCover(isPresented: $appStorageManager.shopSheet, content: {
+            
+            ShopSheet(theme: theme, shopSheet: $appStorageManager.shopSheet)
+            
+        })
+        .onReceive([self.iconSettings.currentIndex].publisher.first()){ value in
+            let i = self.iconSettings.iconNames.firstIndex(of: UIApplication.shared.alternateIconName) ?? 0
+            if value != i{
+                UIApplication.shared.setAlternateIconName(self.iconSettings.iconNames[value], completionHandler: {
+                    error in
+                    if let error = error {
+                        print(error.localizedDescription)
+                    } else {
+                        print("Success!")
+                    }
+                })
+            }
+        }
+        
     }
 
 }
@@ -131,10 +180,13 @@ struct ContentView_Previews: PreviewProvider {
             .environmentObject(AppStorageManager())
             .environmentObject(ThemeManager())
             .environmentObject(CalendarViewModel())
+            .environmentObject(IconNames())
+            .environmentObject(EntitlementManager())
+            .environmentObject(PurchaseManager(entitlementManager: EntitlementManager()))
     }
 }
 
 
 enum Tab {
-    case calendar, visitedMap, settings
+    case calendar, visitedMap, map, settings, countdown
 }

@@ -1,0 +1,171 @@
+/* No comment provided by engineer. */
+"%lld days" = "%lld Tage";
+
+/* No comment provided by engineer. */
+"%lld days since last christmas" = "%lld Tage seit dem letzten Weihnachten";
+
+/* No comment provided by engineer. */
+"%lld days since new year's eve" = "%lld Tage seit Silvester";
+
+/* No comment provided by engineer. */
+"%lld Days until christmas" = "%lld Tage bis Weihnachten";
+
+/* No comment provided by engineer. */
+"%lld days until the end of the year" = "%lld Tage bis zum Jahresende";
+
+/* No comment provided by engineer. */
+"Add for %@" = "Für %@ hinzufügen";
+
+/* No comment provided by engineer. */
+"Add for %@?" = "Für %@ hinzufügen?";
+
+/* No comment provided by engineer. */
+"Add new Country?" = "Neues Land hinzufügen?";
+
+/* No comment provided by engineer. */
+"Add Range" = "Zeitraum hinzufügen";
+
+/* No comment provided by engineer. */
+"Add Range?" = "Zeitraum hinzufügen?";
+
+/* No comment provided by engineer. */
+"All Countries" = "Alle Länder";
+
+/* No comment provided by engineer. */
+"All Entries:" = "Alle Einträge";
+
+/* No comment provided by engineer. */
+"All Time" = "Immer";
+
+/* No comment provided by engineer. */
+"Allow AppIcon change with theme color" = "Ändern des AppIcons mit der Theme-Farbe zulassen";
+
+/* No comment provided by engineer. */
+"AppIcon change" = "AppIcon ändern";
+
+/* No comment provided by engineer. */
+"Ask the Developer" = "Frage den Entwickler";
+
+/* No comment provided by engineer. */
+"black" = "Schwarz";
+
+/* No comment provided by engineer. */
+"blue" = "Blau";
+
+/* No comment provided by engineer. */
+"Cancel" = "Abbrechen";
+
+/* No comment provided by engineer. */
+"County Visited Today" = "Heute besuchter Länder";
+
+/* No comment provided by engineer. */
+"Dates Available" = "Verfügbare Termine";
+
+/* No comment provided by engineer. */
+"done!" = "Fertig!";
+
+/* No comment provided by engineer. */
+"green" = "Grün";
+
+/* No comment provided by engineer. */
+"How to Add Widgets?" = "Wie fügt man Widgets hinzu?";
+
+/* No comment provided by engineer. */
+"How to install a Widget?" = "Wie installiert man ein Widget?";
+
+/* No comment provided by engineer. */
+"Last %lld Time" = "Letzte %lld Zeit";
+
+/* No comment provided by engineer. */
+"Last 7 Days" = "7 Tage";
+
+/* No comment provided by engineer. */
+"Last 30 Days" = "30 Tage";
+
+/* No comment provided by engineer. */
+"List of countries which you`ve visited today." = "Liste der Länder, die Sie heute besucht haben.";
+
+/* No comment provided by engineer. */
+"Map\nVisited Places" = "Karte\nBesuchte Orte";
+
+/* No comment provided by engineer. */
+"next step" = "weiter";
+
+/* No comment provided by engineer. */
+"No Date selected!" = "Kein Datum ausgewählt!";
+
+/* No comment provided by engineer. */
+"orange" = "Orange";
+
+/* No comment provided by engineer. */
+"Privacy Policy" = "Datenschutzrichtlinie";
+
+/* No comment provided by engineer. */
+"Rate the App" = "Die App bewerten";
+
+/* No comment provided by engineer. */
+"Save" = "Speichern";
+
+/* No comment provided by engineer. */
+"Saved Entries:" = "Gespeicherte Einträge:";
+
+/* No comment provided by engineer. */
+"Search Country" = "Ausgewählte Länder";
+
+/* No comment provided by engineer. */
+"Selected Countries" = "Ausgewählte Länder";
+
+/* No comment provided by engineer. */
+"Selected dates:  %lld" = "Ausgewählte Daten:  %lld";
+
+/* No comment provided by engineer. */
+"Set Dates" = "Daten Übernehmen";
+
+/* No comment provided by engineer. */
+"Set for %lld Days" = "%lld Tage ausgewählt";
+
+/* No comment provided by engineer. */
+"Settings" = "Einstellungen";
+
+/* No comment provided by engineer. */
+"Terms and Conditions" = "Bedingungen und Bestimmungen";
+
+/* No comment provided by engineer. */
+"To automatically enter the countries or places you will visit in the future, you should install one of the widgets." = "Um die Länder oder Orte, die Sie in Zukunft besuchen werden, automatisch einzugeben, sollten Sie eines der Widgets installieren.";
+
+/* No comment provided by engineer. */
+"Today" = "Heute";
+
+/* No comment provided by engineer. */
+"Today:" = "Heute:";
+
+/* No comment provided by engineer. */
+"Updated:" = "Aktualisiert:";
+
+/* No comment provided by engineer. */
+"User\nSettings" = "Persönliche\nEinstellungen";
+
+/* No comment provided by engineer. */
+"Visited\nCalendar" = "Besuchte\nLänder";
+
+/* No comment provided by engineer. */
+"Visited\nCountries" = "Besuchte\nLänder";
+
+/* No comment provided by engineer. */
+"Visited Citys" = "Besuchte Orte";
+
+/* No comment provided by engineer. */
+"Visited Countries" = "Besuchte Länder";
+
+/* No comment provided by engineer. */
+"Visited Countries at %@" = "Länder besucht am %@";
+
+/* No comment provided by engineer. */
+"Visited Countrys Today" = "Heute besuchte Länder";
+
+/* No comment provided by engineer. */
+"Visited Countrys Yesterday" = "Gestern besuchte Länder";
+
+/* No comment provided by engineer. */
+"Your`ve visited **%lld/%lld** Countries" = "Du hast **%lld/%lld** Länder besucht";
+

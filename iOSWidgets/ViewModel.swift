@@ -24,8 +24,6 @@ class ViewModel: ObservableObject {
             try? viewContext.save()
             print("saved: \(newCounty)")
             WidgetCenter.shared.reloadAllTimelines()
-        } catch let error {
-            print(error)
-        }
+        } 
     }
 }

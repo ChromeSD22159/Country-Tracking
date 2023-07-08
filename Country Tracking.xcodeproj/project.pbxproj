@@ -11,17 +11,16 @@
 		B61AA4752A473C2500E33FD5 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61AA4742A473C2500E33FD5 /* WidgetKit.framework */; };
 		B61AA4772A473C2500E33FD5 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61AA4762A473C2500E33FD5 /* SwiftUI.framework */; };
 		B61AA47A2A473C2500E33FD5 /* iOSWidgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61AA4792A473C2500E33FD5 /* iOSWidgetsBundle.swift */; };
-		B61AA47C2A473C2500E33FD5 /* iOSWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61AA47B2A473C2500E33FD5 /* iOSWidgets.swift */; };
+		B61AA47C2A473C2500E33FD5 /* CountryTrackerToday.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61AA47B2A473C2500E33FD5 /* CountryTrackerToday.swift */; };
 		B61AA47E2A473C2600E33FD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B61AA47D2A473C2600E33FD5 /* Assets.xcassets */; };
 		B61AA4822A473C2600E33FD5 /* iOSWidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B61AA4722A473C2500E33FD5 /* iOSWidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		B61AA48C2A473DAC00E33FD5 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6676BC12A470A6400260C8F /* Persistence.swift */; };
 		B61AA48D2A473E3A00E33FD5 /* Country_Tracking.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6676BC32A470A6400260C8F /* Country_Tracking.xcdatamodeld */; };
 		B61AA48F2A4740D800E33FD5 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61AA46C2A47321F00E33FD5 /* Country.swift */; };
 		B61AA4982A48256C00E33FD5 /* AppStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61AA4972A48256C00E33FD5 /* AppStorageManager.swift */; };
 		B61AA49A2A482A6400E33FD5 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61AA4992A482A6400E33FD5 /* ThemeManager.swift */; };
 		B61AA49B2A483C0F00E33FD5 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61AA4992A482A6400E33FD5 /* ThemeManager.swift */; };
 		B61AA4A12A48887300E33FD5 /* LocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6676BCE2A470DAD00260C8F /* LocationProvider.swift */; };
-		B61AA4A62A48AA8100E33FD5 /* iOSWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61AA47B2A473C2500E33FD5 /* iOSWidgets.swift */; };
+		B61AA4A62A48AA8100E33FD5 /* CountryTrackerToday.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61AA47B2A473C2500E33FD5 /* CountryTrackerToday.swift */; };
 		B61AA4A82A48B0C700E33FD5 /* LocationWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61AA4902A47450F00E33FD5 /* LocationWidgetProvider.swift */; };
 		B61AA4A92A48B0CB00E33FD5 /* LocationWidgetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61AA4902A47450F00E33FD5 /* LocationWidgetProvider.swift */; };
 		B61AA4AB2A48B6A200E33FD5 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61AA4AA2A48B6A000E33FD5 /* ViewModel.swift */; };
@@ -31,6 +30,20 @@
 		B61AA4B52A49894A00E33FD5 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61AA4B02A4982B200E33FD5 /* Date.swift */; };
 		B61AA4B72A4989CA00E33FD5 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61AA4B62A4989CA00E33FD5 /* Calendar.swift */; };
 		B61AA4B82A4989CF00E33FD5 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61AA4B62A4989CA00E33FD5 /* Calendar.swift */; };
+		B63CDF562A556A7E0064F65F /* Small_Widget_dynamic_day_counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63CDF552A556A7E0064F65F /* Small_Widget_dynamic_day_counter.swift */; };
+		B63CDF572A556A7E0064F65F /* Small_Widget_dynamic_day_counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63CDF552A556A7E0064F65F /* Small_Widget_dynamic_day_counter.swift */; };
+		B63CDF5A2A55751F0064F65F /* countdownWidgetFree.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63CDF582A55751F0064F65F /* countdownWidgetFree.swift */; };
+		B63CDF902A569E770064F65F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6676BC12A470A6400260C8F /* Persistence.swift */; };
+		B64733112A56E7DD00152143 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B647330F2A56E7D300152143 /* CloudKit.framework */; };
+		B64733152A56F38500152143 /* CloudkitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64733142A56F38500152143 /* CloudkitManager.swift */; };
+		B65289862A507557003AFF13 /* ShopSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65289852A507557003AFF13 /* ShopSheet.swift */; };
+		B65289902A507D09003AFF13 /* Country-Tracking-InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B652898E2A507D09003AFF13 /* Country-Tracking-InfoPlist.strings */; };
+		B65289932A507D09003AFF13 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B65289912A507D09003AFF13 /* Localizable.strings */; };
+		B65289952A5086B0003AFF13 /* StoreKitTestCertificate.cer in Resources */ = {isa = PBXBuildFile; fileRef = B65289942A5086B0003AFF13 /* StoreKitTestCertificate.cer */; };
+		B65289992A533DD7003AFF13 /* DevStore.storekit in Resources */ = {isa = PBXBuildFile; fileRef = B65289982A533DD7003AFF13 /* DevStore.storekit */; };
+		B652899B2A5476DB003AFF13 /* VersionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B652899A2A5476DB003AFF13 /* VersionView.swift */; };
+		B652899E2A547C40003AFF13 /* ChangeLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B652899D2A547C40003AFF13 /* ChangeLog.swift */; };
+		B65289A12A54D1F0003AFF13 /* CountdownEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65289A02A54D1F0003AFF13 /* CountdownEntry.swift */; };
 		B6676BB92A470A6200260C8F /* Country_TrackingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6676BB82A470A6200260C8F /* Country_TrackingApp.swift */; };
 		B6676BBB2A470A6200260C8F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6676BBA2A470A6200260C8F /* ContentView.swift */; };
 		B6676BBD2A470A6400260C8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6676BBC2A470A6400260C8F /* Assets.xcassets */; };
@@ -41,11 +54,20 @@
 		B6A6BCF32A49EE3C00D690F5 /* Freiburg.gpx in Resources */ = {isa = PBXBuildFile; fileRef = B6A6BCF22A49EE3C00D690F5 /* Freiburg.gpx */; };
 		B6A6BCFA2A4B11A200D690F5 /* AddCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A6BCF92A4B11A200D690F5 /* AddCountry.swift */; };
 		B6A6BCFD2A4D81B500D690F5 /* AddRangeCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A6BCFC2A4D81B500D690F5 /* AddRangeCountry.swift */; };
-		B6A6BCFF2A4DA2D900D690F5 /* InteractiveMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A6BCFE2A4DA2D900D690F5 /* InteractiveMapView.swift */; };
-		B6A6BD022A4DAE6C00D690F5 /* Macaw in Frameworks */ = {isa = PBXBuildFile; productRef = B6A6BD012A4DAE6C00D690F5 /* Macaw */; };
+		B6A6BCFF2A4DA2D900D690F5 /* VisitedCountries.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A6BCFE2A4DA2D900D690F5 /* VisitedCountries.swift */; };
 		B6A6BD042A4DD9CE00D690F5 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A6BD032A4DD9CE00D690F5 /* String.swift */; };
 		B6A6BD052A4DD9CE00D690F5 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A6BD032A4DD9CE00D690F5 /* String.swift */; };
-		B6A6BD0A2A4E3F1F00D690F5 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = B6A6BD092A4E3F1F00D690F5 /* FSCalendar */; };
+		B6A6BD0F2A4E534600D690F5 /* iOSWidgets7Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A6BD0E2A4E534600D690F5 /* iOSWidgets7Day.swift */; };
+		B6A6BD112A4E583E00D690F5 /* WeatherKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A6BD102A4E583E00D690F5 /* WeatherKitManager.swift */; };
+		B6A6BD132A4E5C6B00D690F5 /* SettingsSheetBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A6BD122A4E5C6B00D690F5 /* SettingsSheetBody.swift */; };
+		B6A6BD152A4E656400D690F5 /* VisitedCitys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A6BD142A4E656300D690F5 /* VisitedCitys.swift */; };
+		B6A6BD182A4F3BC200D690F5 /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A6BD172A4F3BC200D690F5 /* PurchaseManager.swift */; };
+		B6A6BD1A2A4F3DDB00D690F5 /* synStore.storekit in Resources */ = {isa = PBXBuildFile; fileRef = B6A6BD192A4F3DDB00D690F5 /* synStore.storekit */; };
+		B6A6BD1C2A4F419100D690F5 /* WidgetSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A6BD1B2A4F419100D690F5 /* WidgetSheet.swift */; };
+		B6A6BD1E2A4F579F00D690F5 /* IconNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A6BD1D2A4F579F00D690F5 /* IconNames.swift */; };
+		B6A6BD2A2A505E5D00D690F5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6A6BD282A505E5D00D690F5 /* InfoPlist.strings */; };
+		B6A6BD2D2A505E5D00D690F5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6A6BD2B2A505E5D00D690F5 /* Localizable.strings */; };
+		B6A6BD2F2A5062B800D690F5 /* OnlyForTranslation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A6BD2E2A5062B800D690F5 /* OnlyForTranslation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,7 +100,7 @@
 		B61AA4742A473C2500E33FD5 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		B61AA4762A473C2500E33FD5 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		B61AA4792A473C2500E33FD5 /* iOSWidgetsBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSWidgetsBundle.swift; sourceTree = "<group>"; };
-		B61AA47B2A473C2500E33FD5 /* iOSWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSWidgets.swift; sourceTree = "<group>"; };
+		B61AA47B2A473C2500E33FD5 /* CountryTrackerToday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTrackerToday.swift; sourceTree = "<group>"; };
 		B61AA47D2A473C2600E33FD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B61AA47F2A473C2600E33FD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B61AA48A2A473CFB00E33FD5 /* Country Tracking.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Country Tracking.entitlements"; sourceTree = "<group>"; };
@@ -91,6 +113,20 @@
 		B61AA4B02A4982B200E33FD5 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		B61AA4B32A49837200E33FD5 /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
 		B61AA4B62A4989CA00E33FD5 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+		B63CDF552A556A7E0064F65F /* Small_Widget_dynamic_day_counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Small_Widget_dynamic_day_counter.swift; sourceTree = "<group>"; };
+		B63CDF582A55751F0064F65F /* countdownWidgetFree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = countdownWidgetFree.swift; sourceTree = "<group>"; };
+		B63CDF632A55B4040064F65F /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		B63CDF6E2A55B4040064F65F /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		B647330F2A56E7D300152143 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		B64733142A56F38500152143 /* CloudkitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudkitManager.swift; sourceTree = "<group>"; };
+		B65289852A507557003AFF13 /* ShopSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopSheet.swift; sourceTree = "<group>"; };
+		B652898F2A507D09003AFF13 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = "de.lproj/Country-Tracking-InfoPlist.strings"; sourceTree = "<group>"; };
+		B65289922A507D09003AFF13 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B65289942A5086B0003AFF13 /* StoreKitTestCertificate.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = StoreKitTestCertificate.cer; sourceTree = "<group>"; };
+		B65289982A533DD7003AFF13 /* DevStore.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = DevStore.storekit; sourceTree = "<group>"; };
+		B652899A2A5476DB003AFF13 /* VersionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionView.swift; sourceTree = "<group>"; };
+		B652899D2A547C40003AFF13 /* ChangeLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeLog.swift; sourceTree = "<group>"; };
+		B65289A02A54D1F0003AFF13 /* CountdownEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownEntry.swift; sourceTree = "<group>"; };
 		B6676BB52A470A6200260C8F /* Country Tracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Country Tracking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6676BB82A470A6200260C8F /* Country_TrackingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country_TrackingApp.swift; sourceTree = "<group>"; };
 		B6676BBA2A470A6200260C8F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,9 +142,20 @@
 		B6A6BCF92A4B11A200D690F5 /* AddCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCountry.swift; sourceTree = "<group>"; };
 		B6A6BCFB2A4C27AC00D690F5 /* Puerto de la Cruz.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Puerto de la Cruz.gpx"; sourceTree = "<group>"; };
 		B6A6BCFC2A4D81B500D690F5 /* AddRangeCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRangeCountry.swift; sourceTree = "<group>"; };
-		B6A6BCFE2A4DA2D900D690F5 /* InteractiveMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveMapView.swift; sourceTree = "<group>"; };
+		B6A6BCFE2A4DA2D900D690F5 /* VisitedCountries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitedCountries.swift; sourceTree = "<group>"; };
 		B6A6BD032A4DD9CE00D690F5 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		B6A6BD072A4E09ED00D690F5 /* Zuerich.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Zuerich.gpx; sourceTree = "<group>"; };
+		B6A6BD0E2A4E534600D690F5 /* iOSWidgets7Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSWidgets7Day.swift; sourceTree = "<group>"; };
+		B6A6BD102A4E583E00D690F5 /* WeatherKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherKitManager.swift; sourceTree = "<group>"; };
+		B6A6BD122A4E5C6B00D690F5 /* SettingsSheetBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSheetBody.swift; sourceTree = "<group>"; };
+		B6A6BD142A4E656300D690F5 /* VisitedCitys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitedCitys.swift; sourceTree = "<group>"; };
+		B6A6BD172A4F3BC200D690F5 /* PurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
+		B6A6BD192A4F3DDB00D690F5 /* synStore.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = synStore.storekit; sourceTree = "<group>"; };
+		B6A6BD1B2A4F419100D690F5 /* WidgetSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetSheet.swift; sourceTree = "<group>"; };
+		B6A6BD1D2A4F579F00D690F5 /* IconNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconNames.swift; sourceTree = "<group>"; };
+		B6A6BD292A505E5D00D690F5 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B6A6BD2C2A505E5D00D690F5 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B6A6BD2E2A5062B800D690F5 /* OnlyForTranslation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlyForTranslation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,8 +172,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6A6BD022A4DAE6C00D690F5 /* Macaw in Frameworks */,
-				B6A6BD0A2A4E3F1F00D690F5 /* FSCalendar in Frameworks */,
+				B64733112A56E7DD00152143 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +182,11 @@
 		B61AA4732A473C2500E33FD5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B647330F2A56E7D300152143 /* CloudKit.framework */,
 				B61AA4742A473C2500E33FD5 /* WidgetKit.framework */,
 				B61AA4762A473C2500E33FD5 /* SwiftUI.framework */,
+				B63CDF632A55B4040064F65F /* Intents.framework */,
+				B63CDF6E2A55B4040064F65F /* IntentsUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -146,11 +195,13 @@
 			isa = PBXGroup;
 			children = (
 				B61AA4792A473C2500E33FD5 /* iOSWidgetsBundle.swift */,
-				B61AA47B2A473C2500E33FD5 /* iOSWidgets.swift */,
+				B63CDF5B2A557A620064F65F /* Widgets */,
 				B61AA4AA2A48B6A000E33FD5 /* ViewModel.swift */,
 				B61AA4902A47450F00E33FD5 /* LocationWidgetProvider.swift */,
 				B61AA47D2A473C2600E33FD5 /* Assets.xcassets */,
 				B61AA47F2A473C2600E33FD5 /* Info.plist */,
+				B6A6BD2B2A505E5D00D690F5 /* Localizable.strings */,
+				B6A6BD282A505E5D00D690F5 /* InfoPlist.strings */,
 			);
 			path = iOSWidgets;
 			sourceTree = "<group>";
@@ -159,7 +210,11 @@
 			isa = PBXGroup;
 			children = (
 				B6676BCE2A470DAD00260C8F /* LocationProvider.swift */,
+				B64733142A56F38500152143 /* CloudkitManager.swift */,
+				B6A6BD1D2A4F579F00D690F5 /* IconNames.swift */,
+				B6A6BD172A4F3BC200D690F5 /* PurchaseManager.swift */,
 				B61AA4B32A49837200E33FD5 /* CalendarViewModel.swift */,
+				B6A6BD102A4E583E00D690F5 /* WeatherKitManager.swift */,
 				B61AA4992A482A6400E33FD5 /* ThemeManager.swift */,
 				B61AA4972A48256C00E33FD5 /* AppStorageManager.swift */,
 			);
@@ -170,7 +225,14 @@
 			isa = PBXGroup;
 			children = (
 				B6676BBA2A470A6200260C8F /* ContentView.swift */,
-				B6A6BD062A4DF94D00D690F5 /* VisitedCountryMap */,
+				B6A6BD2E2A5062B800D690F5 /* OnlyForTranslation.swift */,
+				B652899C2A547C2A003AFF13 /* Version */,
+				B65289852A507557003AFF13 /* ShopSheet.swift */,
+				B6A6BD122A4E5C6B00D690F5 /* SettingsSheetBody.swift */,
+				B6A6BD1B2A4F419100D690F5 /* WidgetSheet.swift */,
+				B652899F2A54D1BB003AFF13 /* Countydown */,
+				B6A6BD302A5065F500D690F5 /* Visited Cities */,
+				B6A6BD062A4DF94D00D690F5 /* VisitedCountries */,
 				B61AA4AC2A49823900E33FD5 /* Calendar */,
 			);
 			path = View;
@@ -213,12 +275,54 @@
 			path = Extentions;
 			sourceTree = "<group>";
 		};
+		B63CDF532A556A100064F65F /* WidgetStyle */ = {
+			isa = PBXGroup;
+			children = (
+				B63CDF542A556A3A0064F65F /* SmallWidgets */,
+			);
+			path = WidgetStyle;
+			sourceTree = "<group>";
+		};
+		B63CDF542A556A3A0064F65F /* SmallWidgets */ = {
+			isa = PBXGroup;
+			children = (
+				B63CDF552A556A7E0064F65F /* Small_Widget_dynamic_day_counter.swift */,
+			);
+			path = SmallWidgets;
+			sourceTree = "<group>";
+		};
+		B63CDF5B2A557A620064F65F /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				B61AA47B2A473C2500E33FD5 /* CountryTrackerToday.swift */,
+				B63CDF582A55751F0064F65F /* countdownWidgetFree.swift */,
+				B6A6BD0E2A4E534600D690F5 /* iOSWidgets7Day.swift */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		B652899C2A547C2A003AFF13 /* Version */ = {
+			isa = PBXGroup;
+			children = (
+				B652899A2A5476DB003AFF13 /* VersionView.swift */,
+				B652899D2A547C40003AFF13 /* ChangeLog.swift */,
+			);
+			path = Version;
+			sourceTree = "<group>";
+		};
+		B652899F2A54D1BB003AFF13 /* Countydown */ = {
+			isa = PBXGroup;
+			children = (
+				B65289A02A54D1F0003AFF13 /* CountdownEntry.swift */,
+				B63CDF532A556A100064F65F /* WidgetStyle */,
+			);
+			path = Countydown;
+			sourceTree = "<group>";
+		};
 		B6676BAC2A470A6200260C8F = {
 			isa = PBXGroup;
 			children = (
-				B6A6BCF22A49EE3C00D690F5 /* Freiburg.gpx */,
-				B6A6BCFB2A4C27AC00D690F5 /* Puerto de la Cruz.gpx */,
-				B6A6BD072A4E09ED00D690F5 /* Zuerich.gpx */,
+				B6A6BD162A4F1E6100D690F5 /* GPS */,
 				B61AA4942A475A5400E33FD5 /* Shared */,
 				B61AA48B2A473D4500E33FD5 /* iOSWidgetsExtension.entitlements */,
 				B6676BB72A470A6200260C8F /* Country Tracking */,
@@ -242,12 +346,17 @@
 			children = (
 				B61AA48A2A473CFB00E33FD5 /* Country Tracking.entitlements */,
 				B6676BD02A470F9500260C8F /* Country-Tracking-Info.plist */,
+				B65289912A507D09003AFF13 /* Localizable.strings */,
+				B652898E2A507D09003AFF13 /* Country-Tracking-InfoPlist.strings */,
 				B6676BB82A470A6200260C8F /* Country_TrackingApp.swift */,
 				B61AA4882A473C4F00E33FD5 /* View */,
 				B61AA4872A473C4200E33FD5 /* Manager */,
 				B61AA4892A473C5A00E33FD5 /* Model */,
 				B6676BBC2A470A6400260C8F /* Assets.xcassets */,
 				B6676BC12A470A6400260C8F /* Persistence.swift */,
+				B6A6BD192A4F3DDB00D690F5 /* synStore.storekit */,
+				B65289982A533DD7003AFF13 /* DevStore.storekit */,
+				B65289942A5086B0003AFF13 /* StoreKitTestCertificate.cer */,
 				B6676BC62A470A6400260C8F /* Info.plist */,
 				B6676BC32A470A6400260C8F /* Country_Tracking.xcdatamodeld */,
 				B6676BBE2A470A6400260C8F /* Preview Content */,
@@ -263,12 +372,30 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		B6A6BD062A4DF94D00D690F5 /* VisitedCountryMap */ = {
+		B6A6BD062A4DF94D00D690F5 /* VisitedCountries */ = {
 			isa = PBXGroup;
 			children = (
-				B6A6BCFE2A4DA2D900D690F5 /* InteractiveMapView.swift */,
+				B6A6BCFE2A4DA2D900D690F5 /* VisitedCountries.swift */,
 			);
-			path = VisitedCountryMap;
+			path = VisitedCountries;
+			sourceTree = "<group>";
+		};
+		B6A6BD162A4F1E6100D690F5 /* GPS */ = {
+			isa = PBXGroup;
+			children = (
+				B6A6BCF22A49EE3C00D690F5 /* Freiburg.gpx */,
+				B6A6BCFB2A4C27AC00D690F5 /* Puerto de la Cruz.gpx */,
+				B6A6BD072A4E09ED00D690F5 /* Zuerich.gpx */,
+			);
+			path = GPS;
+			sourceTree = "<group>";
+		};
+		B6A6BD302A5065F500D690F5 /* Visited Cities */ = {
+			isa = PBXGroup;
+			children = (
+				B6A6BD142A4E656300D690F5 /* VisitedCitys.swift */,
+			);
+			path = "Visited Cities";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,8 +436,6 @@
 			);
 			name = "Country Tracking";
 			packageProductDependencies = (
-				B6A6BD012A4DAE6C00D690F5 /* Macaw */,
-				B6A6BD092A4E3F1F00D690F5 /* FSCalendar */,
 			);
 			productName = "Country Tracking";
 			productReference = B6676BB52A470A6200260C8F /* Country Tracking.app */;
@@ -341,11 +466,10 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = B6676BAC2A470A6200260C8F;
 			packageReferences = (
-				B6A6BD002A4DAE6C00D690F5 /* XCRemoteSwiftPackageReference "Macaw" */,
-				B6A6BD082A4E3F1F00D690F5 /* XCRemoteSwiftPackageReference "FSCalendar" */,
 			);
 			productRefGroup = B6676BB62A470A6200260C8F /* Products */;
 			projectDirPath = "";
@@ -363,6 +487,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B61AA47E2A473C2600E33FD5 /* Assets.xcassets in Resources */,
+				B6A6BD2D2A505E5D00D690F5 /* Localizable.strings in Resources */,
+				B6A6BD2A2A505E5D00D690F5 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,9 +496,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B65289992A533DD7003AFF13 /* DevStore.storekit in Resources */,
 				B6676BC02A470A6400260C8F /* Preview Assets.xcassets in Resources */,
 				B6A6BCF32A49EE3C00D690F5 /* Freiburg.gpx in Resources */,
+				B65289952A5086B0003AFF13 /* StoreKitTestCertificate.cer in Resources */,
 				B6676BBD2A470A6400260C8F /* Assets.xcassets in Resources */,
+				B65289932A507D09003AFF13 /* Localizable.strings in Resources */,
+				B6A6BD1A2A4F3DDB00D690F5 /* synStore.storekit in Resources */,
+				B65289902A507D09003AFF13 /* Country-Tracking-InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,13 +516,15 @@
 			files = (
 				B61AA4A92A48B0CB00E33FD5 /* LocationWidgetProvider.swift in Sources */,
 				B6A6BD052A4DD9CE00D690F5 /* String.swift in Sources */,
-				B61AA48C2A473DAC00E33FD5 /* Persistence.swift in Sources */,
 				B61AA47A2A473C2500E33FD5 /* iOSWidgetsBundle.swift in Sources */,
-				B61AA47C2A473C2500E33FD5 /* iOSWidgets.swift in Sources */,
+				B61AA47C2A473C2500E33FD5 /* CountryTrackerToday.swift in Sources */,
+				B63CDF572A556A7E0064F65F /* Small_Widget_dynamic_day_counter.swift in Sources */,
 				B61AA48D2A473E3A00E33FD5 /* Country_Tracking.xcdatamodeld in Sources */,
 				B61AA48F2A4740D800E33FD5 /* Country.swift in Sources */,
+				B63CDF902A569E770064F65F /* Persistence.swift in Sources */,
 				B61AA4AB2A48B6A200E33FD5 /* ViewModel.swift in Sources */,
 				B61AA4B52A49894A00E33FD5 /* Date.swift in Sources */,
+				B63CDF5A2A55751F0064F65F /* countdownWidgetFree.swift in Sources */,
 				B61AA49B2A483C0F00E33FD5 /* ThemeManager.swift in Sources */,
 				B61AA4B82A4989CF00E33FD5 /* Calendar.swift in Sources */,
 			);
@@ -402,23 +535,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6A6BD042A4DD9CE00D690F5 /* String.swift in Sources */,
+				B652899B2A5476DB003AFF13 /* VersionView.swift in Sources */,
 				B61AA46D2A47321F00E33FD5 /* Country.swift in Sources */,
 				B6676BC22A470A6400260C8F /* Persistence.swift in Sources */,
+				B652899E2A547C40003AFF13 /* ChangeLog.swift in Sources */,
 				B61AA4A82A48B0C700E33FD5 /* LocationWidgetProvider.swift in Sources */,
 				B61AA4982A48256C00E33FD5 /* AppStorageManager.swift in Sources */,
 				B61AA4B72A4989CA00E33FD5 /* Calendar.swift in Sources */,
-				B61AA4A62A48AA8100E33FD5 /* iOSWidgets.swift in Sources */,
+				B6A6BD0F2A4E534600D690F5 /* iOSWidgets7Day.swift in Sources */,
+				B6A6BD2F2A5062B800D690F5 /* OnlyForTranslation.swift in Sources */,
+				B61AA4A62A48AA8100E33FD5 /* CountryTrackerToday.swift in Sources */,
 				B6676BBB2A470A6200260C8F /* ContentView.swift in Sources */,
 				B61AA49A2A482A6400E33FD5 /* ThemeManager.swift in Sources */,
 				B6A6BCFA2A4B11A200D690F5 /* AddCountry.swift in Sources */,
 				B6676BCD2A470AAB00260C8F /* CalendarEntry.swift in Sources */,
+				B64733152A56F38500152143 /* CloudkitManager.swift in Sources */,
 				B61AA4B42A49837200E33FD5 /* CalendarViewModel.swift in Sources */,
+				B6A6BD152A4E656400D690F5 /* VisitedCitys.swift in Sources */,
 				B61AA4B12A4982B200E33FD5 /* Date.swift in Sources */,
+				B6A6BD112A4E583E00D690F5 /* WeatherKitManager.swift in Sources */,
 				B61AA4AE2A49825200E33FD5 /* CalendarView.swift in Sources */,
+				B6A6BD1E2A4F579F00D690F5 /* IconNames.swift in Sources */,
 				B6676BB92A470A6200260C8F /* Country_TrackingApp.swift in Sources */,
 				B6676BC52A470A6400260C8F /* Country_Tracking.xcdatamodeld in Sources */,
-				B6A6BCFF2A4DA2D900D690F5 /* InteractiveMapView.swift in Sources */,
+				B65289A12A54D1F0003AFF13 /* CountdownEntry.swift in Sources */,
+				B6A6BCFF2A4DA2D900D690F5 /* VisitedCountries.swift in Sources */,
+				B6A6BD1C2A4F419100D690F5 /* WidgetSheet.swift in Sources */,
 				B61AA4A12A48887300E33FD5 /* LocationProvider.swift in Sources */,
+				B6A6BD132A4E5C6B00D690F5 /* SettingsSheetBody.swift in Sources */,
+				B65289862A507557003AFF13 /* ShopSheet.swift in Sources */,
+				B63CDF562A556A7E0064F65F /* Small_Widget_dynamic_day_counter.swift in Sources */,
+				B6A6BD182A4F3BC200D690F5 /* PurchaseManager.swift in Sources */,
 				B6A6BCFD2A4D81B500D690F5 /* AddRangeCountry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +580,43 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		B652898E2A507D09003AFF13 /* Country-Tracking-InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B652898F2A507D09003AFF13 /* de */,
+			);
+			name = "Country-Tracking-InfoPlist.strings";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		B65289912A507D09003AFF13 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B65289922A507D09003AFF13 /* de */,
+			);
+			name = Localizable.strings;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		B6A6BD282A505E5D00D690F5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6A6BD292A505E5D00D690F5 /* de */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B6A6BD2B2A505E5D00D690F5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6A6BD2C2A505E5D00D690F5 /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		B61AA4842A473C2600E33FD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -441,20 +625,21 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = iOSWidgetsExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_TEAM = ZD275Y62U7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOSWidgets/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = iOSWidgets;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Frederik Kohler";
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "$(PRODUCT_NAME) use location for widget";
-				INFOPLIST_KEY_NSLocationUsageDescription = "$(PRODUCT_NAME) use location for widget";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "iOSWidgetsExtension use location for widget";
+				INFOPLIST_KEY_NSLocationUsageDescription = "iOSWidgetsExtension will use your start location information to automatically enter the country you are in.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "iOSWidgetsExtension will use your start location information to automatically enter the country you are in.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "FK.Pro-these-.Country-Tracking.iOSWidgets";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -471,20 +656,21 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = iOSWidgetsExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_TEAM = ZD275Y62U7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOSWidgets/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = iOSWidgets;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Frederik Kohler";
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "$(PRODUCT_NAME) use location for widget";
-				INFOPLIST_KEY_NSLocationUsageDescription = "$(PRODUCT_NAME) use location for widget";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "iOSWidgetsExtension use location for widget";
+				INFOPLIST_KEY_NSLocationUsageDescription = "iOSWidgetsExtension will use your start location information to automatically enter the country you are in.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "iOSWidgetsExtension will use your start location information to automatically enter the country you are in.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "FK.Pro-these-.Country-Tracking.iOSWidgets";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -498,6 +684,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppLogoGreen AppLogoOrange AppLogoBlue AppLogoBlack AppLogoBlau";
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -559,6 +747,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppLogoGreen AppLogoOrange AppLogoBlue AppLogoBlack AppLogoBlau";
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -613,23 +803,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				"ASSETCATALOG_COMPILER_APPICON_NAME[sdk=iphoneos*]" = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = "Country Tracking/Country Tracking.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_ASSET_PATHS = "\"Country Tracking/Preview Content\"";
 				DEVELOPMENT_TEAM = ZD275Y62U7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Country-Tracking-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Country Tracking";
-				INFOPLIST_KEY_LSApplicationCategoryType = "";
-				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "";
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Use location";
-				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "";
-				INFOPLIST_KEY_NSLocationUsageDescription = "";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Country Tracking will use your start location information to automatically enter the country you are in.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Country Tracking will use your start location information to automatically enter the country you are in.";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Country Tracking will use your start location information to automatically enter the country you are in.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Country Tracking will use your start location information to automatically enter the country you are in.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -638,7 +829,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "FK.Pro-these-.Country-Tracking";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -656,21 +847,21 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = "Country Tracking/Country Tracking.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_ASSET_PATHS = "\"Country Tracking/Preview Content\"";
 				DEVELOPMENT_TEAM = ZD275Y62U7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Country-Tracking-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Country Tracking";
-				INFOPLIST_KEY_LSApplicationCategoryType = "";
-				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "";
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Use location";
-				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "";
-				INFOPLIST_KEY_NSLocationUsageDescription = "";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Country Tracking will use your start location information to automatically enter the country you are in.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Country Tracking will use your start location information to automatically enter the country you are in.";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Country Tracking will use your start location information to automatically enter the country you are in.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Country Tracking will use your start location information to automatically enter the country you are in.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -679,7 +870,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "FK.Pro-these-.Country-Tracking";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -722,38 +913,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		B6A6BD002A4DAE6C00D690F5 /* XCRemoteSwiftPackageReference "Macaw" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/exyte/Macaw";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.9.10;
-			};
-		};
-		B6A6BD082A4E3F1F00D690F5 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/WenchaoD/FSCalendar";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		B6A6BD012A4DAE6C00D690F5 /* Macaw */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B6A6BD002A4DAE6C00D690F5 /* XCRemoteSwiftPackageReference "Macaw" */;
-			productName = Macaw;
-		};
-		B6A6BD092A4E3F1F00D690F5 /* FSCalendar */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B6A6BD082A4E3F1F00D690F5 /* XCRemoteSwiftPackageReference "FSCalendar" */;
-			productName = FSCalendar;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		B6676BC32A470A6400260C8F /* Country_Tracking.xcdatamodeld */ = {

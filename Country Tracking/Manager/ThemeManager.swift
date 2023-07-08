@@ -8,41 +8,44 @@
 import Foundation
 import SwiftUI
 
-
-
 class ThemeManager: ObservableObject {
     static let SelectedThemeKey = "SelectedTheme"
     
     func currentTheme() -> Themes {
-        
-        @AppStorage("currentTheme") var currentTheme: String = "default"
+        @AppStorage("currentTheme", store: UserDefaults(suiteName: "group.fk.countryTracking")) var currentTheme: String = "blue"
         
         switch currentTheme {
-            case "default" : return .default
-            case "blue" : return .blue
-            case "green" : return .green
+        case "default" : return .default
+        case "black" : return .black
+        case "blue" : return .blue
+        case "orange" : return .orange
+        case "green" : return .green
+            
         default:
             return .default
         }
         
     }
 
-    
     func applyTheme(theme: Themes) {
-        @AppStorage("currentTheme") var currentTheme: String = theme.themeName
+        @AppStorage("currentTheme", store: UserDefaults(suiteName: "group.fk.countryTracking")) var currentTheme: String = theme.themeName
     }
 }
 
-enum Themes: String {
+enum Themes: String , CaseIterable {
     case `default` = "default"
+    case  black = "black"
     case  blue = "blue"
+    case  orange = "orange"
     case  green = "green"
     
     var themeName: String {
         switch self {
-        case .default : return "default"
-        case .blue : return "default"
-        case .green : return "default"
+        case .default : return "Black"
+        case .black : return "Black"
+        case .blue : return "Blue"
+        case .orange: return "Orange"
+        case .green : return "Green"
         }
     }
     
@@ -57,28 +60,61 @@ enum Themes: String {
                 text: .white,
                 textInverse: .black,
                 accentColor: Color.yellow,
-                badgeColor: Color.red
+                badgeColor: Color.gray,
+                iconName: "AppLogoBlack",
+                description: ""
+
             )
-        case .blue : return
+        case .black : return
             Theme(
-                backgroundColor: Color(red: 5/255, green: 84/255, blue: 140/255),
-                BackgroundImage: "BG_DARK",
+                backgroundColor: Color(red: 0/255, green: 0/255, blue: 0/255),
+                BackgroundImage: "BG_BLACK",
                 headerBackgroundColor: .blue.opacity(0.5),
                 headerText: Color.white,
                 text: Color.white,
                 textInverse: Color.white,
                 accentColor: Color.orange,
-                badgeColor: Color.red
+                badgeColor: Color.gray,
+                iconName: "AppLogoBlack",
+                description: "black"
+            )
+        case .blue : return
+            Theme(
+                backgroundColor: Color(red: 5/255, green: 85/255, blue: 140/255),
+                BackgroundImage: "BG_BLUE",
+                headerBackgroundColor: .blue.opacity(0.5),
+                headerText: Color.white,
+                text: Color.white,
+                textInverse: Color.white,
+                accentColor: Color.orange,
+                badgeColor: Color(red: 5/255, green: 84/255, blue: 140/255),
+                iconName: "AppLogoBlau",
+                description: "blue"
+            )
+        case .orange : return
+            Theme(
+                backgroundColor: Color(red: 215/255, green: 35/255, blue: 0/255),
+                BackgroundImage: "BG_ORANGE",
+                headerBackgroundColor: .blue.opacity(0.5),
+                headerText: Color.white,
+                text: Color.white,
+                textInverse: Color.white,
+                accentColor: Color.orange,
+                badgeColor: Color(red: 215/255, green: 35/255, blue: 0/255),
+                iconName: "AppLogoOrange",
+                description: "orange"
             )
         case .green : return
             Theme(backgroundColor: Color(red: 50/255, green: 60/255, blue: 5/255),
-                  BackgroundImage: "BG_DARK",
+                  BackgroundImage: "BG_GREEN",
                   headerBackgroundColor: Color.green.opacity(0.5),
                   headerText: Color.white,
                   text: Color.white,
                   textInverse: Color.white,
                   accentColor: Color.yellow,
-                  badgeColor: Color.red
+                  badgeColor: Color(red: 50/255, green: 60/255, blue: 5/255),
+                  iconName: "AppLogoGreen",
+                  description: "green"
             )
         }
     }
@@ -94,4 +130,9 @@ struct Theme {
     var textInverse: Color
     var accentColor: Color
     var badgeColor: Color
+    var iconName: String
+    var description: String
+    var preview: UIImage {
+        UIImage(named: iconName) ?? UIImage()
+    }
 }

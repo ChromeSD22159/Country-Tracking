@@ -8,27 +8,26 @@
 import WidgetKit
 import SwiftUI
 import CoreData
-import FlagKit
-
-struct Provider: TimelineProvider {
+/*
+struct CountryTrackerSevenDaysProvider: TimelineProvider {
   
-    func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date())
+    func placeholder(in context: Context) -> CountryTrackerSevenDaysEntry {
+        CountryTrackerSevenDaysEntry(date: Date())
     }
 
-    func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: Date())
+    func getSnapshot(in context: Context, completion: @escaping (CountryTrackerSevenDaysEntry) -> ()) {
+        let entry = CountryTrackerSevenDaysEntry(date: Date())
         completion(entry)
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
-        var entries: [SimpleEntry] = []
+        var entries: [CountryTrackerSevenDaysEntry] = []
 
         // Generate a timeline consisting of five entries an hour apart, starting from the current date.
         let currentDate = Date()
         for hourOffset in 0 ..< 5 {
             let entryDate = Calendar.current.date(byAdding: .minute, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate)
+            let entry = CountryTrackerSevenDaysEntry(date: entryDate)
             entries.append(entry)
         }
 
@@ -37,11 +36,11 @@ struct Provider: TimelineProvider {
     }
 }
 
-struct SimpleEntry: TimelineEntry {
+struct CountryTrackerSevenDaysEntry: TimelineEntry {
     let date: Date
 }
 
-struct iOSWidgetsEntryView : View {
+struct CountryTrackerSevenDaysEntryView : View {
     
     
     @EnvironmentObject var location: LocationWidgetProvider
@@ -62,7 +61,7 @@ struct iOSWidgetsEntryView : View {
         animation: .default)
     var countries: FetchedResults<Countries>
     
-    var entry: Provider.Entry
+    var entry: CountryTrackerSevenDaysProvider.Entry
 
     @AppStorage("currentCountry") var currentCountry: String = ""
     @AppStorage("currentCity") var currentCity: String = ""
@@ -226,7 +225,7 @@ struct iOSWidgetsEntryView : View {
     
 }
 
-struct iOSWidgets: Widget {
+struct SevenDays: Widget {
     let persistenceController = PersistenceController.shared
     let kind: String = "iOSWidgets"
     
@@ -236,8 +235,8 @@ struct iOSWidgets: Widget {
     @ObservedObject private var location: LocationWidgetProvider = LocationWidgetProvider()
 
     var body: some WidgetConfiguration {
-        StaticConfiguration(kind: kind, provider: Provider()) { entry in
-            iOSWidgetsEntryView(entry: entry)
+        StaticConfiguration(kind: kind, provider: CountryTrackerSevenDaysProvider()) { entry in
+            CountryTrackerSevenDaysEntryView(entry: entry)
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
                 .environmentObject(location)
                 .task {
@@ -245,7 +244,7 @@ struct iOSWidgets: Widget {
                     location.StartLocation()
                     
                     if let loc = location.location {
-                        location.decodeLocation( loc , completion:{ city , country, region  in
+                        location.decodeLocation( loc , completion:{ city , country, region,<#arg#>,<#arg#>   in
                             if city.count > 0 {
                                 currentCountry = city
                                 currentCity =  country
@@ -262,12 +261,13 @@ struct iOSWidgets: Widget {
     }
 }
 
-struct iOSWidgets_Previews: PreviewProvider {
+struct SevenDays_Previews: PreviewProvider {
     static var previews: some View {
-        iOSWidgetsEntryView(entry: SimpleEntry(date: Date()))
+        CountryTrackerSevenDaysEntryView(entry: CountryTrackerSevenDaysEntry(date: Date()))
             .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
             .environmentObject(LocationWidgetProvider())
             .previewContext(WidgetPreviewContext(family: .systemSmall))
            
     }
 }
+*/
