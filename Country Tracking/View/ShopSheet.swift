@@ -106,45 +106,66 @@ struct ShopSheet: View {
         VStack(spacing: 20) {
             
             ScrollView(showsIndicators: false) {
-                
-                ZStack {
-                    Image("ProCities")
-                        .resizable()
-                        .scaledToFill()
-                    
-                    VStack {
-                        Spacer()
-                        VStack(spacing: 5) {
-                            HStack {
-                                Spacer()
-                                Image(systemName: "lock.open.fill")
-                                    .foregroundColor(currentTheme.accentColor)
-                                
-                                Text("Show Visited Countries for any numbers of days")
-                                    .foregroundColor(currentTheme.text)
-                                    .font(.caption)
-                                Spacer()
-                            }
-                            
-                            HStack {
-                                Spacer()
-                                Image(systemName: "lock.open.fill")
-                                    .foregroundColor(currentTheme.accentColor)
-                                    .font(.title3)
-                                
-                                Text("Show Visited Cities for any numbers of days")
-                                    .foregroundColor(currentTheme.text)
-                                    .font(.caption)
-                                Spacer()
-                            }
-                        }
-                        .padding(10)
-                        .background(.ultraThinMaterial.opacity(0.75))
+                VStack(spacing: 20) {
+                    ZStack {
+                        Image("ProCities")
+                            .resizable()
+                            .scaledToFill()
                     }
+                    .frame(maxWidth: .infinity, maxHeight: 449)
+                    .cornerRadius(20)
+                    
+                    HStack(spacing: 20) {
+                        Image(systemName: "lock.open.fill")
+                            .foregroundColor(currentTheme.accentColor)
+                            .font(.title3)
+                        
+                        Text("Show Visited Countries for any numbers of days")
+                            .foregroundColor(currentTheme.text)
+                            .font(.caption)
+                        Spacer()
+                    }
+                    .padding(.horizontal, 20)
+                    
+                    HStack(spacing: 20) {
+                        Image(systemName: "lock.open.fill")
+                            .foregroundColor(currentTheme.accentColor)
+                            .font(.title3)
+                        
+                        Text("Show Visited Cities for any numbers of days")
+                            .foregroundColor(currentTheme.text)
+                            .font(.caption)
+                        Spacer()
+                    }
+                    .padding(.horizontal, 20)
+                    
+                    HStack(spacing: 20) {
+                        Image(systemName: "lock.open.fill")
+                            .foregroundColor(currentTheme.accentColor)
+                            .font(.title3)
+                        
+                        Text("Unlock iCloud synchronization")
+                            .foregroundColor(currentTheme.text)
+                            .font(.caption)
+                        Spacer()
+                    }
+                    .padding(.horizontal, 20)
+                    
+                    HStack(spacing: 20) {
+                        Image(systemName: "lock.open.fill")
+                            .foregroundColor(currentTheme.accentColor)
+                            .font(.title3)
+                        
+                        Text("Unlimited number of countdowns")
+                            .foregroundColor(currentTheme.text)
+                            .font(.caption)
+                        Spacer()
+                    }
+                    .padding(.horizontal, 20)
+                    .padding(.bottom, 20)
                 }
-                .frame(maxWidth: .infinity, maxHeight: 449)
+                .background(.ultraThinMaterial)
                 .cornerRadius(20)
-                .padding(.vertical, 20)
                 
                 ForEach(purchaseManager.products.sorted(by: { $0.price < $1.price })) { product in // 12 - Eine Woche
                     

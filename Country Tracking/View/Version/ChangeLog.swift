@@ -20,10 +20,11 @@ class ChangeLog {
         ),
         VersionItem(
             versionNr: "v1.1",
-            date: "XXXXXX", // REPLACE BEFORE REVIEW
-            time: "XXXXXX", // REPLACE BEFORE REVIEW
+            date: "09.07.2023", // REPLACE BEFORE REVIEW
+            time: "19:00:00", // REPLACE BEFORE REVIEW
             tasks: [
-                TaskItem(name: LocalizedStringKey("Countdown feature implemented")) ,
+                TaskItem(name: LocalizedStringKey("Countdown feature implemented")),
+                TaskItem(name: LocalizedStringKey("iCloud Auto Sync implemented")),
                 TaskItem(name: LocalizedStringKey("Small countdown widget")),
                 TaskItem(name: LocalizedStringKey("Optimize Responsitivity for iPad, iPhone")),
                 TaskItem(name: LocalizedStringKey("Bugfix"))

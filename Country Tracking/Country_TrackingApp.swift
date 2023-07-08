@@ -53,7 +53,16 @@ struct Country_TrackingApp: App {
                     getPermissons()
                     theme = themeManager.currentTheme()
                     
-                    try? persistenceController.container.viewContext.setQueryGenerationFrom(.current)
+                    
+                    
+                    print(appStoregeManager.hasPro)
+                    
+                    // Disable icloud when noPRo
+                    if !appStoregeManager.hasPro {
+                        try? persistenceController.container.viewContext.setQueryGenerationFrom(.current)
+                        appStoregeManager.iCloudSync = false
+                    }
+                    
                 }
                 .onChange(of: appStoregeManager.currentTheme, perform: { newTheme in
                     theme = themeManager.currentTheme()

@@ -217,15 +217,9 @@ struct FreeCountDownEntryView : View {
                 
                 Spacer()
                 
-                VStack(alignment: .trailing) {
-                    Text(countdown.date?.dateFormatte(date: "dd.MM.yyyy", time: "").date ?? Date().dateFormatte(date: "dd", time: "").date)
-                        .font(.caption.bold())
-                        .foregroundColor(.white)
-                    
-                    Text(Date().dateFormatte(date: "", time: "HH:mm:ss").time)
-                        .font(.caption2.bold())
-                        .foregroundColor(.gray)
-                }
+                Text(countdown.date?.dateFormatte(date: "dd.MM.yyyy", time: "").date ?? Date().dateFormatte(date: "dd", time: "").date)
+                    .font(.caption.bold())
+                    .foregroundColor(.white)
             }
             
         }

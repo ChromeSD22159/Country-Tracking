@@ -23,7 +23,7 @@ struct VersionView: View {
                 
                 VStack(spacing: 20) {
                     
-                    ForEach(ChangeLog().log, id: \.versionNr) { item in
+                    ForEach(ChangeLog().log.reversed(), id: \.versionNr) { item in
                         Section(content: {
                             VStack(spacing: 10, content: {
                                 HStack {

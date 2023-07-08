@@ -260,7 +260,7 @@ struct SettingsSheetBody: View {
                         Spacer()
                         
                         Toggle("", isOn: $appStorage.iCloudSync)
-                            //.disabled(!appStorage.hasPro)
+                            .disabled(!appStorage.hasPro)
                     }
                     HStack {
                         Text("Pro Feature: Enables automatic syncing and saving with iCloud")

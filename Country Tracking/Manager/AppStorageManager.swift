@@ -10,7 +10,6 @@ import SwiftUI
 
 class AppStorageManager: ObservableObject {
     
-    // AppConfig
     @AppStorage("AppGroup") var AppGroup = "group.countryTracking"
     
     @AppStorage("currentTheme", store: UserDefaults(suiteName: "group.fk.countryTracking")) var currentTheme: String = "default"
@@ -28,7 +27,7 @@ class AppStorageManager: ObservableObject {
     @AppStorage("iCloudSync") var iCloudSync = false
     
     @AppStorage("CountdownFreeCounter") var CountdownFreeCounter = 0
-    @AppStorage("CountdownFreeMaxCounter") var CountdownFreeMaxCounter = 1
+    @AppStorage("CountdownFreeMaxCounter") var CountdownFreeMaxCounter = 5
     
     @AppStorage("useThemeColorForWidgetBG", store: UserDefaults(suiteName: "group.fk.countryTracking")) var useThemeColorForWidgetBG = true
     @AppStorage("toggleWidgetSortable", store: UserDefaults(suiteName: "group.fk.countryTracking")) var toggleWidgetSortable = true

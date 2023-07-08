@@ -13,6 +13,8 @@ import SwiftUI
 struct PersistenceController {
     @AppStorage("iCloudSync") var iCloudSync = false
     
+    @AppStorage("hasPro", store: UserDefaults(suiteName: "group.fk.countryTracking")) var hasPro: Bool = false
+    
     static let shared = PersistenceController()
     
     static var countries: [(country: String, region: String)] = [
@@ -87,7 +89,7 @@ struct PersistenceController {
         localStoreDescription.setOption(true as NSNumber, forKey: NSPersistentHistoryTrackingKey)
         localStoreDescription.configuration = "Local"
 
-        if iCloudSync {
+        if hasPro && iCloudSync {
             localStoreDescription.cloudKitContainerOptions = NSPersistentCloudKitContainerOptions(containerIdentifier: iCloudIdentfier)
         } else {
             localStoreDescription.cloudKitContainerOptions = nil
