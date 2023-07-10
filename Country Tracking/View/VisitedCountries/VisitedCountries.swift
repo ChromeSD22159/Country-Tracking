@@ -354,7 +354,6 @@ struct CountryButton: View {
             _fetchRequest = FetchRequest<VisitedCountry>(
                 sortDescriptors: [],
                 predicate: NSPredicate(format: "region == %@ and date > %@", country.region ?? "" , Calendar.current.date(byAdding: .day, value: -days!, to: date)! as CVarArg)
-                    // FIXME date end of day
             )
         }
         

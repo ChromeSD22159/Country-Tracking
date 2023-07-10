@@ -38,6 +38,18 @@
 "Add Range?" = "Zeitraum hinzufügen?";
 
 /* No comment provided by engineer. */
+"Added French translation" = "Französische Übersetzung hinzugefügt";
+
+/* No comment provided by engineer. */
+"Added Italian translation" = "Italienisch Übersetzung hinzugefügt";
+
+/* No comment provided by engineer. */
+"Added Polnish translation" = "Polnisch Übersetzung hinzugefügt";
+
+/* No comment provided by engineer. */
+"Added Spanish translation" = "Spanisch Übersetzung hinzugefügt";
+
+/* No comment provided by engineer. */
 "All Countries" = "Alle Länder";
 
 /* No comment provided by engineer. */
@@ -47,7 +59,13 @@
 "All Time" = "Immer";
 
 /* No comment provided by engineer. */
+"all Visited Cities" = "Alle besuchten Städte";
+
+/* No comment provided by engineer. */
 "Allow AppIcon change with theme color" = "Ändern des AppIcons mit der Theme-Farbe zulassen";
+
+/* No comment provided by engineer. */
+"Appearance" = "Aussehen";
 
 /* No comment provided by engineer. */
 "AppIcon change" = "AppIcon ändern";
@@ -68,6 +86,9 @@
 "blue" = "Blau";
 
 /* No comment provided by engineer. */
+"Bug fix crash calendar" = "Bug-Fix Kalender";
+
+/* No comment provided by engineer. */
 "Bugfix" = "Bug-Fix";
 
 /* No comment provided by engineer. */
@@ -86,6 +107,9 @@
 "Color:" = "Farbe:";
 
 /* No comment provided by engineer. */
+"Countdown" = "Countdown";
+
+/* No comment provided by engineer. */
 "Countdown feature implemented" = "Countdown-Funktion implementiert";
 
 /* No comment provided by engineer. */
@@ -93,6 +117,9 @@
 
 /* No comment provided by engineer. */
 "Create" = "Erstellen";
+
+/* No comment provided by engineer. */
+"Date picke on tap Current month" = "Datumsauswahl auf Knopfdruck Aktueller Monat";
 
 /* No comment provided by engineer. */
 "Date:" = "Datum:";
@@ -119,6 +146,9 @@
 "green" = "Grün";
 
 /* No comment provided by engineer. */
+"h" = "h";
+
+/* No comment provided by engineer. */
 "How to Add Widgets?" = "Wie fügt man Widgets hinzu?";
 
 /* No comment provided by engineer. */
@@ -126,6 +156,9 @@
 
 /* No comment provided by engineer. */
 "iCloud Auto Sync" = "Automatische iCloud-Synchronisierung";
+
+/* No comment provided by engineer. */
+"iCloud Auto Sync implemented" = "iCloud Auto Sync implementiert";
 
 /* No comment provided by engineer. */
 "Icon:" = "Icon:";
@@ -159,6 +192,9 @@
 
 /* No comment provided by engineer. */
 "No Date selected!" = "Kein Datum ausgewählt!";
+
+/* No comment provided by engineer. */
+"Not Signed" = "Nicht Angemeldet";
 
 /* No comment provided by engineer. */
 "Only %@ per month, billed per Month." = "Nur %@ pro Monat, abgerechnet pro Monat.";
@@ -221,6 +257,9 @@
 "Settings" = "Einstellungen";
 
 /* No comment provided by engineer. */
+"Sheet" = "Sheet";
+
+/* No comment provided by engineer. */
 "Show last added" = "Zuletzt hinzugefügt anzeigen";
 
 /* No comment provided by engineer. */
@@ -231,6 +270,9 @@
 
 /* No comment provided by engineer. */
 "Show Visited Countries for any numbers of days" = "Besuchte Länder für eine beliebige Anzahl von Tagen anzeigen";
+
+/* No comment provided by engineer. */
+"Signed In" = "Angemeldet";
 
 /* No comment provided by engineer. */
 "Signed in: %@" = "Angemeldet: %@";
@@ -275,13 +317,25 @@
 "Today:" = "Heute:";
 
 /* No comment provided by engineer. */
+"Unlimited number of countdowns" = "Unbegrenzte Anzahl an Countdowns";
+
+/* No comment provided by engineer. */
 "Unlock Country Tracking Pro" = "Freischalten von Country Tracking Pro";
+
+/* No comment provided by engineer. */
+"Unlock iCloud synchronization" = "Schalten Sie die iCloud-Synchronisierung frei";
+
+/* No comment provided by engineer. */
+"Update Widgets" = "Widgets aktualisieren";
 
 /* No comment provided by engineer. */
 "Updated:" = "Aktualisiert:";
 
 /* No comment provided by engineer. */
 "User\nSettings" = "Persönliche\nEinstellungen";
+
+/* No comment provided by engineer. */
+"v%@" = "v%@";
 
 /* No comment provided by engineer. */
 "Visited\nCalendar" = "Besuchte\nLänder";
@@ -291,6 +345,12 @@
 
 /* No comment provided by engineer. */
 "Visited Cities" = "Besuchte Orte";
+
+/* No comment provided by engineer. */
+"Visited Cities Today" = "Heute besuchte Städte";
+
+/* No comment provided by engineer. */
+"Visited Cities Yesterday" = "Habe gestern Städte besucht";
 
 /* No comment provided by engineer. */
 "Visited Countries" = "Besuchte Länder";
@@ -310,17 +370,3 @@
 /* No comment provided by engineer. */
 "Your`ve visited **%lld/%lld** Countries" = "Du hast **%lld/%lld** Länder besucht";
 
-/* No comment provided by engineer. */
-"Signed In" = "Angemeldet";
-
-/* No comment provided by engineer. */
-"Not Signed" = "Nicht Angemeldet";
-
-/* No comment provided by engineer. */
-"Unlock iCloud synchronization" = "Schalten Sie die iCloud-Synchronisierung frei";
-
-/* No comment provided by engineer. */
-"Unlimited number of countdowns" = "Unbegrenzte Anzahl an Countdowns";
-
-/* No comment provided by engineer. */
-"iCloud Auto Sync implemented" = "iCloud Auto Sync implementiert";

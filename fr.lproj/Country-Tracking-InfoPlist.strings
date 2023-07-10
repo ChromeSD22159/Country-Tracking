@@ -1,0 +1,18 @@
+/* Bundle display name */
+"CFBundleDisplayName" = "Country Tracking";
+
+/* Bundle name */
+"CFBundleName" = "Country Tracking";
+
+/* Privacy - Location Always and When In Use Usage Description */
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "Country Tracking utilisera les informations de votre lieu de départ pour saisir automatiquement le pays dans lequel vous vous trouvez.";
+
+/* Privacy - Location Always Usage Description */
+"NSLocationAlwaysUsageDescription" = "Country Tracking utilisera les informations de votre lieu de départ pour saisir automatiquement le pays dans lequel vous vous trouvez.";
+
+/* Privacy - Location Usage Description */
+"NSLocationUsageDescription" = "Country Tracking utilisera les informations de votre lieu de départ pour saisir automatiquement le pays dans lequel vous vous trouvez.";
+
+/* Privacy - Location When In Use Usage Description */
+"NSLocationWhenInUseUsageDescription" = "Country Tracking utilisera les informations de votre lieu de départ pour saisir automatiquement le pays dans lequel vous vous trouvez.";
+

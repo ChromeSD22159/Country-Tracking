@@ -32,35 +32,46 @@ struct CalendarView: View {
         predicate: NSPredicate(format: "date > %@", Date().startOfMonth as CVarArg ),
         animation: .default)
     private var visitedCountries: FetchedResults<VisitedCountry>
-    
+
     var body: some View {
        GeometryReader { screen in
            VStack(spacing: 20) {
                
                if control {
                    HStack{
-                       Button(action: {
-                           calendar.currentMonth -= 1
-                       }, label: {
-                           Image(systemName: "chevron.left")
-                               .font(.title2)
-                               .foregroundColor(.white)
-                       })
                        
-                       Spacer()
                        
-                       Text(calendar.currentDate.dateFormatte(date: "MMMM YYYY", time: "HH:mm").date)
-                           .foregroundColor(.white)
-                       
-                       Spacer()
-                       
-                       Button(action: {
-                           calendar.currentMonth += 1
-                       }, label: {
-                           Image(systemName: "chevron.right")
-                               .font(.title2)
-                               .foregroundColor(.white)
-                       })
+                       if !calendar.showPicker {
+                           Button(action: {
+                               calendar.currentMonth -= 1
+                           }, label: {
+                               Image(systemName: "chevron.left")
+                                   .font(.title2)
+                                   .foregroundColor(.white)
+                           })
+                           
+                           Spacer()
+                           
+                           Button(action: {
+                               withAnimation(.easeInOut){
+                                   calendar.showPicker = true
+                               }
+                           }, label: {
+                               Text(calendar.currentDate.dateFormatte(date: "MMM yyyy", time: "").date)
+                               
+                           })
+                               .frame(maxWidth: .infinity)
+                           
+                           Spacer()
+                           
+                           Button(action: {
+                               calendar.currentMonth += 1
+                           }, label: {
+                               Image(systemName: "chevron.right")
+                                   .font(.title2)
+                                   .foregroundColor(.white)
+                           })
+                       }
                    }
                    .padding(.horizontal, 20)
                }
@@ -108,18 +119,29 @@ struct CalendarView: View {
                
            }
            .onAppear {
+               calendar.selectedDate = Date()
                calendar.currentDate = Date()
                calendar.currentDates = calendar.extractMonth()
            }
-           .onChange(of: calendar.currentMonth, perform: { value in
+           .onChange(of: calendar.currentMonth, perform: { (value) in
+               calendar.selectedDate = calendar.getCurrentMonth()
                calendar.currentDate = calendar.getCurrentMonth()
                calendar.currentDates = calendar.extractMonth()
            })
+           .onChange(of: calendar.selectedDate, perform: { (value) in
+               calendar.selectedDate = value
+               calendar.currentDate = value
+               calendar.currentDates = calendar.extractMonthByDate()
+               withAnimation(.easeInOut){
+                   calendar.showPicker = false
+               }
+           })
+          
        }
         
     }
-    
 }
+
 
 struct DayButton:View {
     
@@ -237,7 +259,7 @@ struct DayButton:View {
                             }
                             .frame(maxWidth: .infinity)
                             .padding(.vertical, 5)
-                            .padding(.horizontal, 10)
+                            .padding(.horizontal, 5)
                             .background(calendar.isSameDay(d1: date.date , d2: calendar.currentDate) ? Color.white.opacity(0.1) : Color.white.opacity(0))
                             .cornerRadius(20)
                         }
@@ -364,7 +386,7 @@ struct DayButton:View {
                             }
                             .frame(maxWidth: .infinity)
                             .padding(.vertical, 5)
-                            .padding(.horizontal, 10)
+                            .padding(.horizontal, 5)
                             .background(calendar.isSameDay(d1: date.date , d2: calendar.currentDate) ? Color.white.opacity(0.1) : Color.white.opacity(0))
                             .cornerRadius(20)
                         }

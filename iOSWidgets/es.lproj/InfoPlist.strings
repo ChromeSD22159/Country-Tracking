@@ -1,0 +1,9 @@
+/* Privacy - Location Always and When In Use Usage Description */
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "Ubicación de uso de seguimiento de países para el widget";
+
+/* Privacy - Location Usage Description */
+"NSLocationUsageDescription" = "Country Tracking utilizará la información de su ubicación de inicio para ingresar automáticamente el país en el que se encuentra.";
+
+/* Privacy - Location When In Use Usage Description */
+"NSLocationWhenInUseUsageDescription" = "Country Tracking utilizará la información de su ubicación de inicio para ingresar automáticamente el país en el que se encuentra.";
+

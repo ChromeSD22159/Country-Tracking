@@ -50,7 +50,7 @@ struct ContentView: View {
                 .ignoresSafeArea()
             
             switch Tab {
-            case .calendar: CalendarEntry(tab: $Tab, theme: theme)
+            case .calendar: CalendarEntry(tab: $Tab, theme: theme).edgesIgnoringSafeArea(.bottom)
             case .visitedMap: VisitedCountries(tab: $Tab, theme: theme)
             case .map: VisitedCitys(tab: $Tab, theme: theme)
             case .countdown: CountdownEntry(theme: theme)
@@ -61,8 +61,6 @@ struct ContentView: View {
                 Spacer()
                 
                 HStack {
-                    
-
                     Button(action: {
                         withAnimation(.easeInOut(duration: 0.2)){
                             Tab = .calendar

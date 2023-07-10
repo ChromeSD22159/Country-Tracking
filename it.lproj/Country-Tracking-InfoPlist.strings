@@ -1,0 +1,12 @@
+/* Privacy - Location Always and When In Use Usage Description */
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "Country Tracking utilizzerà le informazioni sulla posizione di partenza per inserire automaticamente il Paese in cui ti trovi.";
+
+/* Privacy - Location Always Usage Description */
+"NSLocationAlwaysUsageDescription" = "Country Tracking utilizzerà le informazioni sulla posizione di partenza per inserire automaticamente il Paese in cui ti trovi.";
+
+/* Privacy - Location Usage Description */
+"NSLocationUsageDescription" = "Country Tracking utilizzerà le informazioni sulla posizione di partenza per inserire automaticamente il Paese in cui ti trovi.";
+
+/* Privacy - Location When In Use Usage Description */
+"NSLocationWhenInUseUsageDescription" = "Country Tracking utilizzerà le informazioni sulla posizione di partenza per inserire automaticamente il Paese in cui ti trovi.";
+

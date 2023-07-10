@@ -141,8 +141,14 @@ struct VisitedCitys: View {
                 Spacer()
                 
                 Picker("Theme", selection: $mapSwitcher) {
-                    ForEach(["Visited Cities Today", "Visited Cities Yesterday", "all Visited Cities"], id: \.self) { theme in
-                        Text(LocalizedStringKey(theme)).tag(theme)
+                    let mapSwitcher = [
+                        (LocalizedStringKey("Visited Cities Today"), "Visited Cities Today"),
+                        (LocalizedStringKey("Visited Cities Yesterday"), "Visited Cities Yesterday"),
+                        (LocalizedStringKey("all Visited Cities"),"all Visited Cities")
+                    ]
+                    
+                    ForEach(mapSwitcher, id: \.1) { localized, rawValue in
+                        Text( localized ).tag(rawValue)
                             .foregroundColor(currentTheme.text)
                     }
                 }
@@ -289,5 +295,11 @@ struct Places: Identifiable {
   
     var coordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+    }
+}
+
+extension LocalizedStringKey {
+    var stringKey: String? {
+        Mirror(reflecting: self).children.first(where: { $0.label == "key" })?.value as? String
     }
 }

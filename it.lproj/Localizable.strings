@@ -1,0 +1,372 @@
+/* No comment provided by engineer. */
+"**Free Version:** %lld/%lld Counter" = "**Versione gratuita:** contatore %lld/%lld";
+
+/* No comment provided by engineer. */
+"%lld day" = "%lld giorno";
+
+/* No comment provided by engineer. */
+"%lld days" = "%lld giorni";
+
+/* No comment provided by engineer. */
+"%lld days since last christmas" = "%lld giorni dall'ultimo natale";
+
+/* No comment provided by engineer. */
+"%lld days since new year's eve" = "%lld giorni dal capodanno";
+
+/* No comment provided by engineer. */
+"%lld Days until christmas" = "%lld Giorni fino a Natale";
+
+/* No comment provided by engineer. */
+"%lld days until the end of the year" = "%lld giorni alla fine dell'anno";
+
+/* No comment provided by engineer. */
+"Add for %@" = "Aggiungi per %@";
+
+/* No comment provided by engineer. */
+"Add for %@?" = "Aggiungi per %@?";
+
+/* No comment provided by engineer. */
+"Add new Country?" = "Aggiungere un nuovo Paese?";
+
+/* No comment provided by engineer. */
+"Add one of the widgets to your home screen." = "Aggiungi uno dei widget alla schermata iniziale.";
+
+/* No comment provided by engineer. */
+"Add Range" = "Aggiungi intervallo";
+
+/* No comment provided by engineer. */
+"Add Range?" = "Aggiungi intervallo?";
+
+/* No comment provided by engineer. */
+"Added French translation" = "Aggiunta traduzione francese";
+
+/* No comment provided by engineer. */
+"Added Italian translation" = "Aggiunta traduzione italiana";
+
+/* No comment provided by engineer. */
+"Added Polnish translation" = "Aggiunta traduzione in polacco";
+
+/* No comment provided by engineer. */
+"Added Spanish translation" = "Aggiunta traduzione in spagnolo";
+
+/* No comment provided by engineer. */
+"All Countries" = "Tutti i paesi";
+
+/* No comment provided by engineer. */
+"All Entries:" = "Tutte le voci:";
+
+/* No comment provided by engineer. */
+"All Time" = "Sempre";
+
+/* No comment provided by engineer. */
+"all Visited Cities" = "tutte le città visitate";
+
+/* No comment provided by engineer. */
+"Allow AppIcon change with theme color" = "Consenti la modifica dell'icona dell'app con il colore del tema";
+
+/* No comment provided by engineer. */
+"Appearance" = "Aspetto";
+
+/* No comment provided by engineer. */
+"AppIcon change" = "Modifica dell'icona dell'app";
+
+/* No comment provided by engineer. */
+"Ask the Developer" = "Chiedi allo sviluppatore";
+
+/* No comment provided by engineer. */
+"Autom. extension. Cancelable at any time." = "Autom. estensione. Annullabile in qualsiasi momento.";
+
+/* No comment provided by engineer. */
+"Background Image:" = "Immagine di sfondo:";
+
+/* No comment provided by engineer. */
+"black" = "nero";
+
+/* No comment provided by engineer. */
+"blue" = "blu";
+
+/* No comment provided by engineer. */
+"Bug fix crash calendar" = "Calendario degli arresti anomali per la correzione di bug";
+
+/* No comment provided by engineer. */
+"Bugfix" = "Bug fix";
+
+/* No comment provided by engineer. */
+"Button" = "Pulsante";
+
+/* No comment provided by engineer. */
+"Buy once for %@ and use all Pro features for life." = "Acquista una volta per %@ e usa tutte le funzioni Pro per sempre.";
+
+/* No comment provided by engineer. */
+"Cancel" = "Annulla";
+
+/* No comment provided by engineer. */
+"ChanceLog implemented" = "ChanceLog implementato";
+
+/* No comment provided by engineer. */
+"ChangeLog" = "Registro delle modifiche";
+
+/* No comment provided by engineer. */
+"Color:" = "Colore:";
+
+/* No comment provided by engineer. */
+"Countdown" = "Conto alla rovescia";
+
+/* No comment provided by engineer. */
+"Countdown feature implemented" = "Funzionalità di conto alla rovescia implementata";
+
+/* No comment provided by engineer. */
+"County Visited Today" = "Contea visitata oggi";
+
+/* No comment provided by engineer. */
+"Create" = "Creare";
+
+/* No comment provided by engineer. */
+"Date picke on tap Current month" = "Selezione della data alla spina Mese corrente";
+
+/* No comment provided by engineer. */
+"Date:" = "Data:";
+
+/* No comment provided by engineer. */
+"Dates Available" = "Date disponibili";
+
+/* No comment provided by engineer. */
+"Day" = "Giorno";
+
+/* No comment provided by engineer. */
+"Days" = "Giorni";
+
+/* No comment provided by engineer. */
+"Delete \"%@\"" = "Eliminare \"%@\"";
+
+/* No comment provided by engineer. */
+"done!" = "Fatto!";
+
+/* No comment provided by engineer. */
+"Get Premium" = "Ottieni Premium";
+
+/* No comment provided by engineer. */
+"green" = "verde";
+
+/* No comment provided by engineer. */
+"h" = "h";
+
+/* No comment provided by engineer. */
+"How to Add Widgets?" = "Come aggiungere widget?";
+
+/* No comment provided by engineer. */
+"How to install a Widget?" = "Come installare un widget?";
+
+/* No comment provided by engineer. */
+"iCloud Auto Sync" = "Sincronizzazione automatica iCloud";
+
+/* No comment provided by engineer. */
+"iCloud Auto Sync implemented" = "Sincronizzazione automatica iCloud implementata";
+
+/* No comment provided by engineer. */
+"Icon:" = "Icona:";
+
+/* No comment provided by engineer. */
+"Last 7 Days" = "Ultimi 7 giorni";
+
+/* No comment provided by engineer. */
+"Last 30 Days" = "Ultimi 30 giorni";
+
+/* No comment provided by engineer. */
+"List" = "Elenco";
+
+/* No comment provided by engineer. */
+"List of countries which you`ve visited today." = "Elenco dei paesi che hai visitato oggi.";
+
+/* No comment provided by engineer. */
+"Long press on a free space on your homescreen" = "Premi a lungo su uno spazio libero sulla schermata iniziale";
+
+/* No comment provided by engineer. */
+"Map\nVisited Places" = "Carta geografica\nLuoghi visitati";
+
+/* No comment provided by engineer. */
+"Name:" = "Nome:";
+
+/* No comment provided by engineer. */
+"New Countdown" = "Nuovo conto alla rovescia";
+
+/* No comment provided by engineer. */
+"next step" = "passo successivo";
+
+/* No comment provided by engineer. */
+"No Date selected!" = "Nessuna data selezionata!";
+
+/* No comment provided by engineer. */
+"Not Signed" = "Non firmato";
+
+/* No comment provided by engineer. */
+"Only %@ per month, billed per Month." = "Solo %@ al mese, fatturati al mese.";
+
+/* No comment provided by engineer. */
+"Only %@ per year, billed per year." = "Solo %@ all'anno, fatturati all'anno.";
+
+/* No comment provided by engineer. */
+"Optimize Responsitivity for iPad, iPhone" = "Ottimizza la reattività per iPad, iPhone";
+
+/* No comment provided by engineer. */
+"orange" = "arancia";
+
+/* No comment provided by engineer. */
+"Press the \"Done\" icon in the upper right corner" = "Premi l'icona \"Fatto\" nell'angolo in alto a destra";
+
+/* No comment provided by engineer. */
+"Press the + icon in the upper left corner" = "Premi l'icona + nell'angolo in alto a sinistra";
+
+/* No comment provided by engineer. */
+"Privacy Policy" = "politica sulla riservatezza";
+
+/* No comment provided by engineer. */
+"Pro Feature" = "Funzionalità Pro";
+
+/* No comment provided by engineer. */
+"Pro Feature: Enables automatic syncing and saving with iCloud" = "Funzionalità Pro: abilita la sincronizzazione e il salvataggio automatici con iCloud";
+
+/* No comment provided by engineer. */
+"Rate the App" = "Valuta l'app";
+
+/* No comment provided by engineer. */
+"Restore" = "Ristabilire";
+
+/* No comment provided by engineer. */
+"Save" = "Salva";
+
+/* No comment provided by engineer. */
+"Saved Entries:" = "Voci salvate:";
+
+/* No comment provided by engineer. */
+"Search Country" = "Cerca Paese";
+
+/* No comment provided by engineer. */
+"Search the list for \"Country Tracking\"" = "Cerca nell'elenco \"Country Tracking\"";
+
+/* No comment provided by engineer. */
+"Selected Countries" = "Paesi selezionati";
+
+/* No comment provided by engineer. */
+"Selected dates:  %lld" = "Date selezionate: %lld";
+
+/* No comment provided by engineer. */
+"Set Dates" = "Imposta le date";
+
+/* No comment provided by engineer. */
+"Set for %lld Days" = "Impostato per %lld giorni";
+
+/* No comment provided by engineer. */
+"Settings" = "Impostazioni";
+
+/* No comment provided by engineer. */
+"Sheet" = "Foglio";
+
+/* No comment provided by engineer. */
+"Show last added" = "Mostra l'ultimo aggiunto";
+
+/* No comment provided by engineer. */
+"Show Next Event" = "Mostra il prossimo evento";
+
+/* No comment provided by engineer. */
+"Show Visited Cities for any numbers of days" = "Mostra le città visitate per qualsiasi numero di giorni";
+
+/* No comment provided by engineer. */
+"Show Visited Countries for any numbers of days" = "Mostra Paesi visitati per qualsiasi numero di giorni";
+
+/* No comment provided by engineer. */
+"Signed In" = "Registrato in";
+
+/* No comment provided by engineer. */
+"Signed in: %@" = "Registrato in: %@";
+
+/* No comment provided by engineer. */
+"Small countdown widget" = "Piccolo widget per il conto alla rovescia";
+
+/* No comment provided by engineer. */
+"Start Date:" = "Data d'inizio:";
+
+/* No comment provided by engineer. */
+"Start Time:" = "Ora di inizio:";
+
+/* No comment provided by engineer. */
+"Terms and Conditions" = "Termini e Condizioni";
+
+/* No comment provided by engineer. */
+"The start date is used for calculating the progress in the widgets. By default, the creation date and time is used." = "La data di inizio viene utilizzata per calcolare l'avanzamento nei widget. Per impostazione predefinita, vengono utilizzate la data e l'ora di creazione.";
+
+/* No comment provided by engineer. */
+"Theme" = "Tema";
+
+/* No comment provided by engineer. */
+"Theme Color" = "Colore del tema";
+
+/* No comment provided by engineer. */
+"There are no fees during your trial period. After that there is a charge of %@ per year until cancellation." = "Non ci sono costi durante il periodo di prova. Successivamente è previsto un addebito di %@ all'anno fino alla cancellazione.";
+
+/* No comment provided by engineer. */
+"There are no fees during your trial period. After that, you will pay %@ per month until you cancel." = "Non ci sono costi durante il periodo di prova. Successivamente, pagherai %@ al mese fino all'annullamento.";
+
+/* No comment provided by engineer. */
+"Time:" = "Tempo:";
+
+/* No comment provided by engineer. */
+"To automatically enter the countries or places you will visit in the future, you should install one of the widgets." = "Per inserire automaticamente i paesi o i luoghi che visiterai in futuro, dovresti installare uno dei widget.";
+
+/* No comment provided by engineer. */
+"Today" = "Oggi";
+
+/* No comment provided by engineer. */
+"Today:" = "Oggi:";
+
+/* No comment provided by engineer. */
+"Unlimited number of countdowns" = "Numero illimitato di conti alla rovescia";
+
+/* No comment provided by engineer. */
+"Unlock Country Tracking Pro" = "Sblocca Country Tracking Pro";
+
+/* No comment provided by engineer. */
+"Unlock iCloud synchronization" = "Sblocca la sincronizzazione iCloud";
+
+/* No comment provided by engineer. */
+"Update Widgets" = "Aggiorna widget";
+
+/* No comment provided by engineer. */
+"Updated:" = "Aggiornato:";
+
+/* No comment provided by engineer. */
+"User\nSettings" = "Utente\nImpostazioni";
+
+/* No comment provided by engineer. */
+"Visited\nCalendar" = "Visitato\nCalendario";
+
+/* No comment provided by engineer. */
+"Visited\nCountries" = "Visitato\nPaesi";
+
+/* No comment provided by engineer. */
+"Visited Cities" = "Città visitate";
+
+/* No comment provided by engineer. */
+"Visited Cities Today" = "Città visitate oggi";
+
+/* No comment provided by engineer. */
+"Visited Cities Yesterday" = "Città visitate ieri";
+
+/* No comment provided by engineer. */
+"Visited Countries" = "Paesi visitati";
+
+/* No comment provided by engineer. */
+"Visited Countries at %@" = "Paesi visitati a %@";
+
+/* No comment provided by engineer. */
+"Visited Countrys Today" = "Paesi visitati oggi";
+
+/* No comment provided by engineer. */
+"Visited Countrys Yesterday" = "Paesi visitati ieri";
+
+/* No comment provided by engineer. */
+"Widget Preview" = "Anteprima widget";
+
+/* No comment provided by engineer. */
+"Your`ve visited **%lld/%lld** Countries" = "Hai visitato **%lld/%lld** Paesi";
+

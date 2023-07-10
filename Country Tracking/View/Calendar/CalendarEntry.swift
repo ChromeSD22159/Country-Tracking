@@ -43,47 +43,73 @@ struct CalendarEntry: View {
     var currentTheme: Theme {
         return self.theme.theme
     }
+
+    private var dateClosedRange: ClosedRange<Date> {
+        let min = Calendar.current.date(byAdding: .year, value: -5, to: Date())!
+        let max = Calendar.current.date(byAdding: .hour, value: 1, to: Date())!
+        return min...max
+    }
     
     var body: some View {
         ZStack {
-
             VStack {
-                ZStack {
-                    VStack {
-                        ScrollView(showsIndicators: false) {
-                           
-                            ViewThatFits(content: {
-                                // LANDSCAPE
-                                HStack {
-                                    
-                                    Spacer()
-                                      
-                                    VStack{
-                                        CalendarView(control: true, theme: theme)
-                                            .frame(maxWidth: 430)
-                                            .padding(.top, 70)
-                                    }
-                                    
-                                    Spacer()
-                                }
-                                
-                                
-                                // PORTRAIT
-                                VStack(spacing: 10) {
-                                    CalendarView(control: true, theme: theme)
-                                        .frame(maxWidth: 430)
-                                }
-                                .font(.body)
-                                
-                            })
+
+                ScrollView(showsIndicators: false) {
+                   
+                    ViewThatFits(content: {
+                        // LANDSCAPE
+                        HStack {
+                            
+                            Spacer()
+                              
+                            VStack{
+                                CalendarView(control: true, theme: theme)
+                                    .frame(maxWidth: 430)
+                                    .padding(.top, 70)
+                            }
+                            
+                            Spacer()
                         }
-                    } // Content
-                    
-                    
-                    Header()
+                        
+                        
+                        // PORTRAIT
+                        VStack(spacing: 10) {
+                            CalendarView(control: true, theme: theme)
+                                .frame(maxWidth: 430)
+                        }
+                        .font(.body)
+                        
+                    })
                 }
+                    .blur( radius: calendar.showPicker ? 4 : 0)
+                
+            } // Content
+            
+            if calendar.showPicker {
+              
+                VStack {
+                    ZStack {
+                        Color.black.opacity(0.5).ignoresSafeArea()
+                        
+                        DatePicker(
+                            "",
+                            selection: $calendar.selectedDate,
+                            in: dateClosedRange,
+                            displayedComponents: .date
+                        )
+                        .labelsHidden()
+                        .datePickerStyle(.wheel)
+                        .frame(minWidth: 0, maxWidth: .infinity, alignment: .center)
+                        .padding(.top, 50)
+                    }
+                    
+                    
+                    Spacer()
+                }
+                
             }
             
+            Header()
         }
         .onAppear {
             orientation = UIDevice.current.orientation

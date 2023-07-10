@@ -1,0 +1,9 @@
+/* Privacy - Location Always and When In Use Usage Description */
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "iOSWidgetsExtension utilise l'emplacement pour le widget";
+
+/* Privacy - Location Usage Description */
+"NSLocationUsageDescription" = "iOSWidgetsExtension utilisera vos informations de lieu de départ pour saisir automatiquement le pays dans lequel vous vous trouvez.";
+
+/* Privacy - Location When In Use Usage Description */
+"NSLocationWhenInUseUsageDescription" = "iOSWidgetsExtension utilisera vos informations de lieu de départ pour saisir automatiquement le pays dans lequel vous vous trouvez.";
+
