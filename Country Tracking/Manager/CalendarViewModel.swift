@@ -84,8 +84,6 @@ class CalendarViewModel: ObservableObject {
         
         let firstDayOfMonth = calendar.date(from: Calendar.current.dateComponents([.year, .month], from: self.selectedDate))
         
-        print(firstDayOfMonth)
-        
         if calendar.isDateInThisMonth(firstDayOfMonth!) {
             self.currentDate = Date()
             

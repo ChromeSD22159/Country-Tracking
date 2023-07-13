@@ -32,12 +32,12 @@ class ChangeLog {
         ),
         VersionItem(
             versionNr: "v1.2",
-            date: "XX.07.2023", // REPLACE BEFORE REVIEW
+            date: "11.07.2023", // REPLACE BEFORE REVIEW
             time: "19:00:00", // REPLACE BEFORE REVIEW
             tasks: [
                 TaskItem(name: LocalizedStringKey("Added French translation")),
                 TaskItem(name: LocalizedStringKey("Added Spanish translation")),
-                TaskItem(name: LocalizedStringKey("Added Polnish translation")),
+               // TaskItem(name: LocalizedStringKey("Added Polnish translation")),
                 TaskItem(name: LocalizedStringKey("Added Italian translation")),
                 TaskItem(name: LocalizedStringKey("Bug fix crash calendar")),
                 TaskItem(name: LocalizedStringKey("Date picke on tap Current month"))

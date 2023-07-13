@@ -52,15 +52,15 @@ struct Country_TrackingApp: App {
                 .onAppear {
                     getPermissons()
                     theme = themeManager.currentTheme()
-                    
-                    
-                    
-                    print(appStoregeManager.hasPro)
+
                     
                     // Disable icloud when noPRo
                     if !appStoregeManager.hasPro {
-                        try? persistenceController.container.viewContext.setQueryGenerationFrom(.current)
                         appStoregeManager.iCloudSync = false
+                    } else {
+                        // IMPORTANT COREDATA SYNC
+                        try? PersistenceController.shared.container.viewContext.setQueryGenerationFrom(.current)
+                        PersistenceController.shared.container.viewContext.refreshAllObjects()
                     }
                     
                 }

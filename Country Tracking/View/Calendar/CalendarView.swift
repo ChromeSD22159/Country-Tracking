@@ -43,7 +43,10 @@ struct CalendarView: View {
                        
                        if !calendar.showPicker {
                            Button(action: {
-                               calendar.currentMonth -= 1
+                            //   calendar.currentMonth -= 1
+                               
+                               calendar.selectedDate = Calendar.current.date(byAdding: .month, value: -1, to: calendar.selectedDate)!
+                               
                            }, label: {
                                Image(systemName: "chevron.left")
                                    .font(.title2)
@@ -65,7 +68,8 @@ struct CalendarView: View {
                            Spacer()
                            
                            Button(action: {
-                               calendar.currentMonth += 1
+                              // calendar.currentMonth += 1
+                               calendar.selectedDate = Calendar.current.date(byAdding: .month, value: +1, to: calendar.selectedDate)!
                            }, label: {
                                Image(systemName: "chevron.right")
                                    .font(.title2)

@@ -91,17 +91,39 @@ struct CalendarEntry: View {
                     ZStack {
                         Color.black.opacity(0.5).ignoresSafeArea()
                         
-                        DatePicker(
-                            "",
-                            selection: $calendar.selectedDate,
-                            in: dateClosedRange,
-                            displayedComponents: .date
-                        )
-                        .labelsHidden()
-                        .datePickerStyle(.wheel)
-                        .frame(minWidth: 0, maxWidth: .infinity, alignment: .center)
-                        .padding(.top, 50)
+                        VStack(spacing: 20) {
+                            Spacer()
+                            
+                            HStack {
+                                Spacer()
+                                
+                                Button(action: {
+                                    withAnimation(.easeInOut) {
+                                        calendar.showPicker = false
+                                    }
+                                }, label: {
+                                    Image(systemName: "xmark")
+                                        .foregroundColor(.white)
+                                })
+                            }
+                            .padding(.horizontal, 50)
+                            
+                            DatePicker(
+                                "",
+                                selection: $calendar.selectedDate,
+                                in: dateClosedRange,
+                                displayedComponents: .date
+                            )
+                            .labelsHidden()
+                            .datePickerStyle(.wheel)
+                            .background(.ultraThinMaterial)
+                            .cornerRadius(20)
+                            .frame(minWidth: 0, maxWidth: .infinity, alignment: .center)
+                            
+                            Spacer()
+                        }
                     }
+                    
                     
                     
                     Spacer()

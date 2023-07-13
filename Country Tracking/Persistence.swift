@@ -105,8 +105,6 @@ struct PersistenceController {
         cloudStoreDescription.cloudKitContainerOptions = NSPersistentCloudKitContainerOptions(containerIdentifier: iCloudIdentfier)
         
         try? container.viewContext.setQueryGenerationFrom(.current)
-        
-         //   container.viewContext.refreshAllObjects()
     
         // Update the container's list of store descriptions
         container.persistentStoreDescriptions = [
